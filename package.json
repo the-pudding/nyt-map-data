@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "download": "node download.js",
-    "countries": "node countries.js",
-    "find-countries": "node find-countries.js",
-    "analyze": "node analyze.js"
+    "download": "node scripts/download.js",
+    "countries": "node scripts/countries.js",
+    "find-countries": "node scripts/find-countries.js",
+    "analyze": "node scripts/analyze.js"
   },
   "keywords": [],
   "author": "",
