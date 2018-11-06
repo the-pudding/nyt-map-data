@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "download": "node scripts/download.js",
+    "clean": "node scripts/clean.js",
     "countries": "node scripts/countries.js",
     "find-countries": "node scripts/find-countries.js",
     "analyze": "node scripts/analyze.js",

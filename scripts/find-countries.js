@@ -24,17 +24,14 @@ function findCountries({ data, year, month }) {
     const exists = countries.find(c => checkMatch({ c, d, f: 'both' }));
     return exists;
   });
-  const unique = uniq(filtered, d => d.web_url);
-  const output = d3.csvFormat(unique);
-  fs.writeFileSync(
-    `./output/months-with-countries/${year}-${month}.csv`,
-    output
-  );
+  const output = d3.csvFormat(filtered);
+  const path = `./output/months-with-countries/${year}-${month}.csv`;
+  fs.writeFileSync(path, output);
 }
 
 function init() {
   const files = fs
-    .readdirSync('./output/months')
+    .readdirSync('./output/months-clean')
     .filter(d => d.includes('.csv'));
 
   for (f in files) {

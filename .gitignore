@@ -2,6 +2,7 @@
 node_modules
 output/months
 output/months-with-countries
+output/months-clean
 key.js
 test.js
 package-lock.json
