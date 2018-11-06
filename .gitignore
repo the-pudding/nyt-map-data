@@ -3,4 +3,5 @@ node_modules
 output/months
 output/months-with-countries
 key.js
+test.js
 package-lock.json

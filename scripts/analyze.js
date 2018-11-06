@@ -49,7 +49,7 @@ function init() {
   }
   const output = [].concat(...result);
   const csv = d3.csvFormat(output);
-  fs.writeFileSync('./output/anaylsis.csv', csv);
+  fs.writeFileSync('./output/analysis.csv', csv);
 }
 
 init();

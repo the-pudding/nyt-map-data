@@ -1,6 +1,7 @@
 const d3 = require('d3');
 const fs = require('fs');
 const mkdirp = require('mkdirp');
+const uniq = require('lodash.uniqby');
 
 mkdirp('./output/months-with-countries');
 
@@ -23,7 +24,8 @@ function findCountries({ data, year, month }) {
     const exists = countries.find(c => checkMatch({ c, d, f: 'both' }));
     return exists;
   });
-  const output = d3.csvFormat(filtered);
+  const unique = uniq(filtered, d => d.web_url);
+  const output = d3.csvFormat(unique);
   fs.writeFileSync(
     `./output/months-with-countries/${year}-${month}.csv`,
     output
@@ -35,7 +37,6 @@ function init() {
     .readdirSync('./output/months')
     .filter(d => d.includes('.csv'));
 
-  // const result = [];
   for (f in files) {
     console.log(files[f]);
     const data = d3.csvParse(
@@ -45,11 +46,7 @@ function init() {
     const year = split[0];
     const month = split[1].replace('.csv', '');
     const r = findCountries({ data, year, month });
-    // result.push(r);
   }
-  // const output = [].concat(...result);
-  // const csv = d3.csvFormat(output);
-  // fs.writeFileSync('./output/anaylsis.csv', csv);
 }
 
 init();
