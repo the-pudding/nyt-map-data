@@ -7,6 +7,7 @@
     "download": "node scripts/download.js",
     "clean": "node scripts/clean.js",
     "countries": "node scripts/countries.js",
+    "names": "node scripts/names.js",
     "find-countries": "node scripts/find-countries.js",
     "analyze": "node scripts/analyze.js",
     "test": "node scripts/test.js"
