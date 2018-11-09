@@ -1,30 +1,62 @@
 const d3 = require('d3');
 const fs = require('fs');
 const mkdirp = require('mkdirp');
+const prepareCountries = require('./prepare-countries');
+const suffix = 'page-one';
+// const suffix = 'clean'
 
 mkdirp('./output');
 
-const countries = d3.csvParse(
-  fs.readFileSync('./output/countries.csv', 'utf-8')
-);
+// remove US
+let countries = d3
+  .csvParse(fs.readFileSync('./output/countries.csv', 'utf-8'))
+  .filter(d => d.demonym !== 'American');
 
-function checkMatch({ c, d, f }) {
-  const common = c.common.toLowerCase();
-  const demonym = c.demonym.toLowerCase();
-  const hasCommon = d.headline.toLowerCase().includes(common);
-  const hasDemonym = d.headline.toLowerCase().includes(demonym);
-  if (f === 'common') return common && hasCommon;
-  else if (f === 'demonym') return demonym && hasDemonym;
-  return (common && hasCommon) || (demonym && hasDemonym);
+countries = prepareCountries(countries);
+
+function includes({ h, inc, exc }) {
+  const found = inc.find(i => {
+    const hasWord = h.includes(i);
+    if (!hasWord) return false;
+    const index = h.indexOf(i);
+    const prevChar = h.charAt(index - 1);
+    const hasPrefix = ['-', ' ', '"'].includes(prevChar);
+    return index === 0 || hasPrefix;
+  });
+  if (!exc.length) return found;
+  return (
+    found &&
+    !exc.find(e => {
+      const hasWord = h.includes(e);
+      if (!hasWord) return false;
+      const index = h.indexOf(e);
+      const prevChar = h.charAt(index - 1);
+      const hasPrefix = ['-', ' ', '"'].includes(prevChar);
+      return index === 0 || hasPrefix;
+    })
+  );
+}
+
+function checkMatch({ c, h }) {
+  const common = includes({
+    h,
+    inc: [c.commonLower, ...c.custom],
+    exc: c.commonExclude
+  });
+  const demonym =
+    c.demonymLower &&
+    includes({ h, inc: [c.demonymLower], exc: c.demonymExclude });
+
+  return common || demonym;
 }
 
 function analyze({ data, year, month }) {
   const result = [];
   countries.forEach(c => {
-    const common = data.filter(d => checkMatch({ c, d, f: 'common' })).length;
-    const demonym = data.filter(d => checkMatch({ c, d, f: 'demonym' })).length;
-    const count = data.filter(d => checkMatch({ c, d, f: 'both' })).length;
-    result.push({ country: c.common, year, month, common, demonym, count });
+    const count = data.filter(d =>
+      checkMatch({ c, h: d.headline.toLowerCase() })
+    ).length;
+    result.push({ country: c.common, year, month, count });
   });
 
   return result;
@@ -32,15 +64,16 @@ function analyze({ data, year, month }) {
 
 function init() {
   const files = fs
-    .readdirSync('./output/months')
+    .readdirSync(`./output/months-${suffix}`)
     .filter(d => d.includes('.csv'));
 
   const result = [];
   for (f in files) {
     console.log(files[f]);
     const data = d3.csvParse(
-      fs.readFileSync(`./output/months-with-countries/${files[f]}`, 'utf-8')
+      fs.readFileSync(`./output/months-${suffix}/${files[f]}`, 'utf-8')
     );
+
     const split = files[f].split('-');
     const year = split[0];
     const month = split[1].replace('.csv', '');
@@ -49,7 +82,7 @@ function init() {
   }
   const output = [].concat(...result);
   const csv = d3.csvFormat(output);
-  fs.writeFileSync('./output/analysis.csv', csv);
+  fs.writeFileSync(`./output/analysis--${suffix}.csv`, csv);
 }
 
 init();

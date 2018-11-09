@@ -1,8 +1,6 @@
 .DS_Store
 node_modules
-output/months
-output/months-with-countries
-output/months-clean
+output/months*
 key.js
 test.js
 package-lock.json

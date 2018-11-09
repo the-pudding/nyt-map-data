@@ -9,12 +9,13 @@ const countries = JSON.parse(
 );
 
 const result = countries.map(
-  ({ name, cca2, capital, demonym, flag, latlng, region, subregion }) => {
+  ({ name, cca2, ccn3, capital, demonym, flag, latlng, region, subregion }) => {
     const { common, official } = name;
     return {
       common,
       official,
-      cca2,
+			cca2,
+			ccn3,
       capital: capital.join(','),
       demonym,
       flag,
