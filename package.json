@@ -8,8 +8,6 @@
     "clean": "node scripts/clean.js",
     "page-one": "node scripts/page-one.js",
     "countries": "node scripts/countries.js",
-    "names": "node scripts/names.js",
-    "find-countries": "node scripts/find-countries.js",
     "analyze": "node scripts/analyze.js",
     "by-year": "node scripts/by-year.js",
     "by-month": "node scripts/by-month.js",

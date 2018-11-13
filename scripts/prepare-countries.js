@@ -18,7 +18,7 @@ const customOther = {
 };
 
 const customExclude = {
-  Jersey: ['New Jersey']
+  Jersey: ['new jersey']
 };
 
 const customAdd = [

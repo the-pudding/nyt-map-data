@@ -31,7 +31,7 @@ Martinique,1902,05,24
 Cuba,1902,06,18
 India,1902,07,12
 India,1902,08,8
-Russia,1902,09,6
+Mexico,1902,09,6
 India,1902,10,10
 India,1902,11,12
 Germany,1902,12,32
@@ -42,8 +42,8 @@ Russia,1903,04,29
 Russia,1903,05,14
 Russia,1903,06,8
 Russia,1903,07,18
-Jersey,1903,08,17
-China,1903,09,10
+Turkey,1903,08,15
+Mexico,1903,09,10
 Russia,1903,10,21
 Panama,1903,11,42
 Panama,1903,12,32
@@ -99,11 +99,11 @@ France,1908,01,15
 France,1908,02,11
 Italy,1908,03,19
 United Kingdom,1908,04,9
-Jersey,1908,05,11
+France,1908,05,10
 Germany,1908,06,9
 Germany,1908,07,15
 Germany,1908,08,10
-Jersey,1908,09,10
+France,1908,09,8
 Austria,1908,10,14
 Germany,1908,11,14
 France,1908,12,14
@@ -117,7 +117,7 @@ France,1909,07,14
 France,1909,08,19
 France,1909,09,10
 China,1909,10,12
-Jersey,1909,11,9
+India,1909,11,7
 Nicaragua,1909,12,11
 Germany,1910,01,17
 France,1910,02,12
@@ -125,12 +125,12 @@ India,1910,03,9
 France,1910,04,10
 France,1910,05,12
 Mexico,1910,06,8
-Jersey,1910,07,8
+China,1910,07,6
 Spain,1910,08,8
 Italy,1910,09,9
 France,1910,10,11
 Mexico,1910,11,19
-Jersey,1910,12,10
+Germany,1910,12,7
 Germany,1911,01,10
 Russia,1911,02,7
 Mexico,1911,03,25
@@ -160,7 +160,7 @@ Mexico,1913,02,18
 Cuba,1913,03,11
 Japan,1913,04,12
 France,1913,05,12
-Mexico,1913,06,6
+United Kingdom,1913,06,6
 Mexico,1913,07,24
 Mexico,1913,08,31
 Mexico,1913,09,15
@@ -248,7 +248,7 @@ Ireland,1920,06,21
 Germany,1920,07,23
 Poland,1920,08,69
 Italy,1920,09,21
-France,1920,10,20
+Russia,1920,10,20
 Ireland,1920,11,25
 Germany,1920,12,25
 Germany,1921,01,23
@@ -287,7 +287,7 @@ Italy,1923,09,31
 France,1923,10,29
 France,1923,11,37
 Germany,1923,12,25
-Mexico,1924,01,14
+United Kingdom,1924,01,14
 France,1924,02,9
 France,1924,03,19
 Germany,1924,04,28
@@ -333,7 +333,7 @@ United Kingdom,1927,07,28
 United Kingdom,1927,08,12
 France,1927,09,29
 France,1927,10,27
-France,1927,11,11
+Russia,1927,11,11
 Mexico,1927,12,42
 Nicaragua,1928,01,33
 France,1928,02,14
@@ -378,7 +378,7 @@ Nicaragua,1931,04,20
 France,1931,05,29
 Germany,1931,06,49
 Germany,1931,07,68
-United Kingdom,1931,08,20
+Germany,1931,08,20
 United Kingdom,1931,09,26
 Japan,1931,10,40
 Japan,1931,11,64
@@ -392,7 +392,7 @@ France,1932,06,17
 Germany,1932,07,22
 United Kingdom,1932,08,18
 France,1932,09,19
-Russia,1932,10,12
+Germany,1932,10,12
 France,1932,11,24
 France,1932,12,31
 Japan,1933,01,35
@@ -415,7 +415,7 @@ France,1934,05,18
 Germany,1934,06,21
 Germany,1934,07,25
 Germany,1934,08,17
-United Kingdom,1934,09,8
+Russia,1934,09,8
 United Kingdom,1934,10,17
 Japan,1934,11,15
 Russia,1934,12,21
@@ -436,7 +436,7 @@ Russia,1936,02,20
 France,1936,03,30
 Italy,1936,04,31
 Italy,1936,05,36
-France,1936,06,11
+United Kingdom,1936,06,11
 Spain,1936,07,23
 Spain,1936,08,41
 France,1936,09,19
@@ -501,7 +501,7 @@ Russia,1941,07,54
 Russia,1941,08,62
 Russia,1941,09,52
 Russia,1941,10,60
-United Kingdom,1941,11,27
+Germany,1941,11,27
 Japan,1941,12,53
 Japan,1942,01,64
 Japan,1942,02,73
@@ -888,7 +888,7 @@ Israel,1973,10,62
 Israel,1973,11,36
 Israel,1973,12,19
 Israel,1974,01,23
-Jersey,1974,02,12
+Russia,1974,02,11
 Russia,1974,03,13
 Israel,1974,04,20
 Israel,1974,05,23
@@ -903,7 +903,7 @@ Russia,1975,01,10
 Israel,1975,02,13
 Cambodia,1975,03,25
 Vietnam,1975,04,40
-Cambodia,1975,05,14
+Vietnam,1975,05,14
 Israel,1975,06,13
 Israel,1975,07,17
 Israel,1975,08,20
@@ -920,7 +920,7 @@ Lebanon,1976,06,24
 Uganda,1976,07,13
 South Africa,1976,08,18
 Zimbabwe,1976,09,17
-China,1976,10,8
+Lebanon,1976,10,8
 Israel,1976,11,11
 China,1976,12,10
 Russia,1977,01,11
@@ -947,7 +947,7 @@ Prussia,1978,09,0
 Prussia,1978,10,0
 Russia,1978,11,7
 Iran,1978,12,12
-China,1979,01,8
+Iran,1979,01,8
 Iran,1979,02,9
 China,1979,03,6
 Zimbabwe,1979,04,3
@@ -994,8 +994,8 @@ Israel,1982,08,14
 Israel,1982,09,34
 Israel,1982,10,12
 Russia,1982,11,13
-Jersey,1982,12,11
-Russia,1983,01,10
+Brazil,1982,12,8
+Lebanon,1983,01,10
 Israel,1983,02,15
 Russia,1983,03,11
 Russia,1983,04,13
@@ -1032,7 +1032,7 @@ Russia,1985,10,12
 Russia,1985,11,23
 Russia,1985,12,13
 Libya,1986,01,17
-Philippines,1986,02,8
+Russia,1986,02,8
 France,1986,03,8
 Libya,1986,04,21
 Russia,1986,05,15
@@ -1120,7 +1120,7 @@ Japan,1993,02,10
 Russia,1993,03,15
 Russia,1993,04,16
 China,1993,05,7
-China,1993,06,12
+Japan,1993,06,12
 Japan,1993,07,14
 Israel,1993,08,14
 Israel,1993,09,18
@@ -1141,26 +1141,26 @@ China,1994,11,6
 Russia,1994,12,15
 Mexico,1995,01,18
 Mexico,1995,02,16
-Jersey,1995,03,34
+Jordan,1995,03,9
 Japan,1995,04,8
 Japan,1995,05,13
 Japan,1995,06,19
-Jersey,1995,07,10
+China,1995,07,8
 China,1995,08,12
 China,1995,09,8
-Jersey,1995,10,58
-Jersey,1995,11,40
-Jersey,1995,12,44
-Jersey,1996,01,70
-Jersey,1996,02,82
-Jersey,1996,03,58
-Jersey,1996,04,42
-Jersey,1996,05,17
+Japan,1995,10,12
+Israel,1995,11,13
+Russia,1995,12,13
+Russia,1996,01,9
+Cuba,1996,02,6
+Israel,1996,03,12
+Israel,1996,04,13
+Russia,1996,05,9
 Russia,1996,06,16
-Jersey,1996,07,17
+Russia,1996,07,11
 Russia,1996,08,7
 Iraq,1996,09,21
-Jersey,1996,10,10
+Japan,1996,10,7
 DR Congo,1996,11,9
 Peru,1996,12,9
 Russia,1997,01,7
@@ -1171,8 +1171,8 @@ DR Congo,1997,05,15
 Hong Kong,1997,06,8
 Mexico,1997,07,12
 Israel,1997,08,11
-Jersey,1997,09,43
-Jersey,1997,10,115
+China,1997,09,6
+India,1997,10,11
 Iraq,1997,11,20
 Mexico,1997,12,9
 Indonesia,1998,01,11
@@ -1209,7 +1209,7 @@ China,2000,07,12
 Russia,2000,08,14
 China,2000,09,9
 China,2000,10,15
-Canada,2000,11,9
+United Kingdom,2000,11,9
 China,2000,12,14
 China,2001,01,9
 Israel,2001,02,9
@@ -1218,7 +1218,7 @@ China,2001,04,22
 China,2001,05,20
 China,2001,06,20
 China,2001,07,15
-Japan,2001,08,18
+South Korea,2001,08,18
 Afghanistan,2001,09,14
 Afghanistan,2001,10,23
 Afghanistan,2001,11,32
@@ -1365,7 +1365,7 @@ China,2013,07,14
 Syria,2013,08,15
 Syria,2013,09,27
 China,2013,10,7
-Iran,2013,11,12
+China,2013,11,12
 China,2013,12,11
 Syria,2014,01,7
 Russia,2014,02,12
@@ -1383,7 +1383,7 @@ France,2015,01,10
 China,2015,02,12
 Iran,2015,03,14
 China,2015,04,16
-Iraq,2015,05,8
+China,2015,05,8
 Greece,2015,06,18
 Greece,2015,07,29
 China,2015,08,28

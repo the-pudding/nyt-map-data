@@ -1,11 +1,12 @@
 const d3 = require('d3');
 const fs = require('fs');
-const suffix = 'page-one';
-// const suffix = 'clean'
+// const suffix = 'page-one';
+// const suffix = 'all';
+const suffix = 'weighted-10';
 
 const data = d3
   .csvParse(fs.readFileSync(`./output/analysis--${suffix}.csv`, 'utf-8'))
-  // .filter(d => !['Oman', 'United States', 'Jersey'].includes(d.country))
+  .filter(d => !['Jersey'].includes(d.country))
   .map(d => ({
     ...d,
     count: +d.count

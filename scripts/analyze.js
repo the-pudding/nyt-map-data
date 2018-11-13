@@ -2,8 +2,11 @@ const d3 = require('d3');
 const fs = require('fs');
 const mkdirp = require('mkdirp');
 const prepareCountries = require('./prepare-countries');
-const suffix = 'page-one';
-// const suffix = 'clean'
+// const readSuffix = 'page-one';
+// const writeSuffix = 'page-one';
+const readSuffix = 'clean';
+// const writeSuffix = 'all';
+const writeSuffix = 'weighted-10';
 
 mkdirp('./output');
 
@@ -53,9 +56,13 @@ function checkMatch({ c, h }) {
 function analyze({ data, year, month }) {
   const result = [];
   countries.forEach(c => {
-    const count = data.filter(d =>
+    const matches = data.filter(d =>
       checkMatch({ c, h: d.headline.toLowerCase() })
-    ).length;
+    );
+    const count = writeSuffix.includes('weighted')
+      ? d3.sum(matches, m => (m.print_page === '1' ? 10 : 1))
+      : matches.length;
+
     result.push({ country: c.common, year, month, count });
   });
 
@@ -64,14 +71,13 @@ function analyze({ data, year, month }) {
 
 function init() {
   const files = fs
-    .readdirSync(`./output/months-${suffix}`)
+    .readdirSync(`./output/months-${readSuffix}`)
     .filter(d => d.includes('.csv'));
-
   const result = [];
   for (f in files) {
     console.log(files[f]);
     const data = d3.csvParse(
-      fs.readFileSync(`./output/months-${suffix}/${files[f]}`, 'utf-8')
+      fs.readFileSync(`./output/months-${readSuffix}/${files[f]}`, 'utf-8')
     );
 
     const split = files[f].split('-');
@@ -82,7 +88,7 @@ function init() {
   }
   const output = [].concat(...result);
   const csv = d3.csvFormat(output);
-  fs.writeFileSync(`./output/analysis--${suffix}.csv`, csv);
+  fs.writeFileSync(`./output/analysis--${writeSuffix}.csv`, csv);
 }
 
 init();
