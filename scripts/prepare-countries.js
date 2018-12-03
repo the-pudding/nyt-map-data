@@ -13,7 +13,7 @@ const customDem = {
 
 const customOther = {
   'DR Congo': ['congo'],
-  'United Kingdom': ['u.k.'],
+  'United Kingdom': ['u.k.', 'england'],
   Russia: ['u.s.s.r.', 'soviet']
 };
 
@@ -24,11 +24,11 @@ const customExclude = {
 const customAdd = [
   {
     common: 'Czechoslovakia',
-    demonym: 'Czechoslovakian'
+    demonym: 'Czechoslovak'
   },
   {
     common: 'Yugoslavia',
-    demonym: 'Yugoslavian'
+    demonym: 'Yugoslav'
   },
   {
     common: 'Tibet',
@@ -48,7 +48,7 @@ const renaming = d3.csvParse(
   fs.readFileSync('./input/geographical_renaming.csv', 'utf-8')
 );
 
-module.exports = function prepareCountries(countries) {
+module.exports = function prepareCountries({ countries, cities }) {
   countries = countries.concat(customAdd);
   countries.forEach(c => {
     // adjust demonym to use if duplicate
@@ -106,6 +106,18 @@ module.exports = function prepareCountries(countries) {
       ...dc.map(c => c.commonLower),
       ...dd.map(c => c.demonymLower)
     );
+
+    country.capitalLower = country.capital
+      ? country.capital.toLowerCase()
+      : null;
+
+    // add cities to country
+    country.cities = cities
+      .filter(c => c.country.toLowerCase() === country.commonLower)
+      .map(c => c.city.toLowerCase())
+      .filter(c => c !== country.capitalLower);
+
+    if (country.capitalLower) country.cities.push(country.capitalLower);
   });
   return countries;
 };

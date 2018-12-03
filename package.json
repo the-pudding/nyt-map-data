@@ -8,6 +8,7 @@
     "clean": "node scripts/clean.js",
     "page-one": "node scripts/page-one.js",
     "countries": "node scripts/countries.js",
+    "add-countries": "node scripts/add-countries.js",
     "analyze": "node scripts/analyze.js",
     "by-year": "node scripts/by-year.js",
     "by-month": "node scripts/by-month.js",
@@ -20,6 +21,7 @@
     "d3": "5.7.0",
     "lodash.uniqby": "4.7.0",
     "mkdirp": "0.5.1",
+    "ner": "1.0.0",
     "request": "2.88.0"
   }
 }

@@ -1,94 +1,94 @@
 const d3 = require('d3');
 const fs = require('fs');
 const mkdirp = require('mkdirp');
-const prepareCountries = require('./prepare-countries');
-// const readSuffix = 'page-one';
-// const writeSuffix = 'page-one';
-const readSuffix = 'clean';
-// const writeSuffix = 'all';
-const writeSuffix = 'weighted-10';
+const uniq = require('lodash.uniqby');
 
 mkdirp('./output');
 
-// remove US
-let countries = d3
-  .csvParse(fs.readFileSync('./output/countries.csv', 'utf-8'))
-  .filter(d => d.demonym !== 'American');
-
-countries = prepareCountries(countries);
-
-function includes({ h, inc, exc }) {
-  const found = inc.find(i => {
-    const hasWord = h.includes(i);
-    if (!hasWord) return false;
-    const index = h.indexOf(i);
-    const prevChar = h.charAt(index - 1);
-    const hasPrefix = ['-', ' ', '"'].includes(prevChar);
-    return index === 0 || hasPrefix;
-  });
-  if (!exc.length) return found;
-  return (
-    found &&
-    !exc.find(e => {
-      const hasWord = h.includes(e);
-      if (!hasWord) return false;
-      const index = h.indexOf(e);
-      const prevChar = h.charAt(index - 1);
-      const hasPrefix = ['-', ' ', '"'].includes(prevChar);
-      return index === 0 || hasPrefix;
-    })
-  );
-}
-
-function checkMatch({ c, h }) {
-  const common = includes({
-    h,
-    inc: [c.commonLower, ...c.custom],
-    exc: c.commonExclude
-  });
-  const demonym =
-    c.demonymLower &&
-    includes({ h, inc: [c.demonymLower], exc: c.demonymExclude });
-
-  return common || demonym;
-}
-
-function analyze({ data, year, month }) {
-  const result = [];
-  countries.forEach(c => {
-    const matches = data.filter(d =>
-      checkMatch({ c, h: d.headline.toLowerCase() })
-    );
-    const count = writeSuffix.includes('weighted')
-      ? d3.sum(matches, m => (m.print_page === '1' ? 10 : 1))
-      : matches.length;
-
-    result.push({ country: c.common, year, month, count });
+const data = d3
+  .csvParse(fs.readFileSync('./output/analysis--locations.csv', 'utf-8'))
+  .map(d => {
+    // '1900-01-01T00:00:00Z'
+    const [year, month] = d.pub_date.split('-');
+    return { ...d, year, month };
   });
 
-  return result;
+function getCountries(str) {
+  const all = str.split(' : ').map(d => {
+    const s = d.split(' (');
+    return s[0];
+  });
+
+  return uniq(all);
 }
 
-function init() {
-  const files = fs
-    .readdirSync(`./output/months-${readSuffix}`)
-    .filter(d => d.includes('.csv'));
-  const result = [];
-  for (f in files) {
-    console.log(files[f]);
-    const data = d3.csvParse(
-      fs.readFileSync(`./output/months-${readSuffix}/${files[f]}`, 'utf-8')
-    );
+function findWinner(values) {
+  const dict = {};
+  values.forEach(v => {
+    v.countries.forEach(c => {
+      if (!dict[c]) dict[c] = 0;
+      dict[c] += 1;
+    });
+  });
 
-    const split = files[f].split('-');
-    const year = split[0];
-    const month = split[1].replace('.csv', '');
-    const r = analyze({ data, year, month });
-    result.push(r);
-  }
-  const output = [].concat(...result);
-  const csv = d3.csvFormat(output);
-  fs.writeFileSync(`./output/analysis--${writeSuffix}.csv`, csv);
+  const arr = Object.keys(dict).map(d => ({ name: d, count: dict[d] }));
+  arr.sort((a, b) => d3.ascending(a.count, b.count));
+  const winner = arr.pop();
+  const articles = values
+    .filter(v => v.countries.includes(winner.name))
+    .map(a => ({ ...a, top: winner.name }));
+  return {
+    ...winner,
+    articles
+  };
 }
 
-init();
+const withCountry = data.map(d => {
+  const common = d.common ? getCountries(d.common) : [];
+  const demonym = d.demonym ? getCountries(d.demonym) : [];
+  const city = d.city ? getCountries(d.city) : [];
+  const all = [].concat(...common, ...demonym, ...city);
+  const countries = uniq(all);
+  return { ...d, countries };
+});
+
+const byMonth = d3
+  .nest()
+  .key(d => `${d.year}-${d.month}`)
+  .rollup(findWinner)
+  .entries(withCountry);
+
+const flatMonth = [].concat(...byMonth.map(d => d.value.articles));
+fs.writeFileSync(`./output/analysis--month.csv`, d3.csvFormat(flatMonth));
+
+const resultMonth = byMonth.map(d => ({
+  year: d.value.articles[0].year,
+  month: d.value.articles[0].month,
+  country: d.value.name,
+  count: d.value.count
+}));
+
+resultMonth.sort(
+  (a, b) => d3.ascending(+a.year, +b.year) || d3.ascending(+a.month, +b.month)
+);
+
+fs.writeFileSync(`./output/result--month.csv`, d3.csvFormat(resultMonth));
+
+const byYear = d3
+  .nest()
+  .key(d => d.year)
+  .rollup(findWinner)
+  .entries(withCountry);
+
+const flatYear = [].concat(...byYear.map(d => d.value.articles));
+fs.writeFileSync(`./output/analysis--year.csv`, d3.csvFormat(flatYear));
+
+const resultYear = byYear.map(d => ({
+  year: d.value.articles[0].year,
+  country: d.value.name,
+  count: d.value.count
+}));
+
+resultYear.sort((a, b) => d3.ascending(+a.year, +b.year));
+
+fs.writeFileSync(`./output/result--year.csv`, d3.csvFormat(resultYear));

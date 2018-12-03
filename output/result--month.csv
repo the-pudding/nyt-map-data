@@ -1,0 +1,1414 @@
+year,month,country,count
+1900,01,united kingdom,45
+1900,02,united kingdom,43
+1900,03,united kingdom,27
+1900,04,united kingdom,22
+1900,05,united kingdom,28
+1900,06,china,42
+1900,07,china,65
+1900,08,china,46
+1900,09,germany,12
+1900,10,united kingdom,19
+1900,11,united kingdom,26
+1900,12,united kingdom,65
+1901,01,united kingdom,42
+1901,02,united kingdom,22
+1901,03,russia,38
+1901,04,russia,33
+1901,05,united kingdom,26
+1901,06,united kingdom,24
+1901,07,united kingdom,33
+1901,08,united kingdom,30
+1901,09,united kingdom,31
+1901,10,united kingdom,58
+1901,11,united kingdom,52
+1901,12,united kingdom,60
+1902,01,united kingdom,48
+1902,02,united kingdom,32
+1902,03,united kingdom,34
+1902,04,united kingdom,36
+1902,05,france,26
+1902,06,united kingdom,27
+1902,07,united kingdom,18
+1902,08,united kingdom,23
+1902,09,united kingdom,14
+1902,10,united kingdom,16
+1902,11,united kingdom,17
+1902,12,venezuela,38
+1903,01,united kingdom,22
+1903,02,germany,24
+1903,03,cuba,17
+1903,04,russia,30
+1903,05,united kingdom,16
+1903,06,united kingdom,15
+1903,07,russia,18
+1903,08,turkey,15
+1903,09,united kingdom,16
+1903,10,russia,22
+1903,11,colombia,43
+1903,12,panama,32
+1904,01,russia,57
+1904,02,russia,106
+1904,03,russia,62
+1904,04,russia,57
+1904,05,russia,56
+1904,06,russia,46
+1904,07,russia,39
+1904,08,russia,58
+1904,09,russia,48
+1904,10,russia,48
+1904,11,russia,40
+1904,12,russia,31
+1905,01,russia,42
+1905,02,russia,36
+1905,03,russia,46
+1905,04,russia,27
+1905,05,russia,51
+1905,06,russia,63
+1905,07,russia,33
+1905,08,russia,47
+1905,09,japan,28
+1905,10,russia,17
+1905,11,russia,36
+1905,12,russia,50
+1906,01,united kingdom,19
+1906,02,france,15
+1906,03,germany,19
+1906,04,italy,11
+1906,05,united kingdom,14
+1906,06,russia,18
+1906,07,united kingdom,19
+1906,08,united kingdom,23
+1906,09,cuba,27
+1906,10,united kingdom,31
+1906,11,united kingdom,18
+1906,12,japan,25
+1907,01,united kingdom,19
+1907,02,japan,24
+1907,03,italy,11
+1907,04,united kingdom,14
+1907,05,united kingdom,17
+1907,06,france,27
+1907,07,japan,26
+1907,08,france,15
+1907,09,united kingdom,16
+1907,10,united kingdom,18
+1907,11,france,24
+1907,12,united kingdom,22
+1908,01,france,28
+1908,02,france,25
+1908,03,united kingdom,25
+1908,04,france,16
+1908,05,france,21
+1908,06,france,16
+1908,07,germany,21
+1908,08,united kingdom,22
+1908,09,united kingdom,18
+1908,10,united kingdom,20
+1908,11,united kingdom,19
+1908,12,france,17
+1909,01,united kingdom,21
+1909,02,united kingdom,22
+1909,03,united kingdom,26
+1909,04,france,22
+1909,05,united kingdom,27
+1909,06,france,37
+1909,07,united kingdom,32
+1909,08,france,25
+1909,09,france,15
+1909,10,united kingdom,18
+1909,11,united kingdom,16
+1909,12,united kingdom,19
+1910,01,france,20
+1910,02,france,18
+1910,03,united kingdom,11
+1910,04,france,18
+1910,05,united kingdom,19
+1910,06,canada,14
+1910,07,united kingdom,15
+1910,08,united kingdom,13
+1910,09,france,18
+1910,10,france,16
+1910,11,mexico,20
+1910,12,united kingdom,11
+1911,01,united kingdom,17
+1911,02,united kingdom,10
+1911,03,mexico,26
+1911,04,mexico,20
+1911,05,united kingdom,16
+1911,06,united kingdom,12
+1911,07,united kingdom,21
+1911,08,united kingdom,25
+1911,09,france,26
+1911,10,italy,21
+1911,11,italy,14
+1911,12,russia,24
+1912,01,united kingdom,26
+1912,02,united kingdom,11
+1912,03,united kingdom,25
+1912,04,france,14
+1912,05,united kingdom,14
+1912,06,united kingdom,11
+1912,07,united kingdom,16
+1912,08,united kingdom,11
+1912,09,france,15
+1912,10,turkey,16
+1912,11,united kingdom,18
+1912,12,united kingdom,25
+1913,01,united kingdom,19
+1913,02,mexico,18
+1913,03,united kingdom,12
+1913,04,united kingdom,15
+1913,05,united kingdom,18
+1913,06,united kingdom,13
+1913,07,mexico,25
+1913,08,mexico,31
+1913,09,united kingdom,18
+1913,10,mexico,21
+1913,11,mexico,32
+1913,12,united kingdom,36
+1914,01,mexico,17
+1914,02,united kingdom,19
+1914,03,united kingdom,22
+1914,04,mexico,51
+1914,05,mexico,78
+1914,06,mexico,20
+1914,07,mexico,21
+1914,08,germany,257
+1914,09,germany,284
+1914,10,germany,266
+1914,11,germany,206
+1914,12,germany,161
+1915,01,germany,125
+1915,02,germany,143
+1915,03,germany,125
+1915,04,germany,133
+1915,05,germany,160
+1915,06,germany,163
+1915,07,germany,143
+1915,08,germany,177
+1915,09,germany,149
+1915,10,germany,128
+1915,11,germany,125
+1915,12,germany,111
+1916,01,germany,101
+1916,02,germany,135
+1916,03,germany,126
+1916,04,germany,124
+1916,05,germany,127
+1916,06,germany,77
+1916,07,germany,138
+1916,08,germany,112
+1916,09,germany,77
+1916,10,germany,98
+1916,11,germany,116
+1916,12,germany,141
+1917,01,germany,103
+1917,02,germany,145
+1917,03,germany,160
+1917,04,germany,140
+1917,05,germany,114
+1917,06,germany,80
+1917,07,germany,124
+1917,08,germany,132
+1917,09,germany,154
+1917,10,germany,137
+1917,11,germany,115
+1917,12,germany,89
+1918,01,germany,90
+1918,02,germany,112
+1918,03,germany,158
+1918,04,germany,159
+1918,05,germany,153
+1918,06,germany,153
+1918,07,germany,135
+1918,08,germany,160
+1918,09,germany,146
+1918,10,germany,174
+1918,11,germany,150
+1918,12,germany,114
+1919,01,germany,81
+1919,02,germany,78
+1919,03,germany,87
+1919,04,germany,86
+1919,05,germany,97
+1919,06,germany,105
+1919,07,france,45
+1919,08,germany,30
+1919,09,germany,23
+1919,10,germany,33
+1919,11,germany,27
+1919,12,germany,37
+1920,01,germany,37
+1920,02,united kingdom,50
+1920,03,germany,58
+1920,04,germany,36
+1920,05,france,22
+1920,06,ireland,21
+1920,07,germany,27
+1920,08,poland,78
+1920,09,italy,23
+1920,10,united kingdom,27
+1920,11,united kingdom,34
+1920,12,united kingdom,27
+1921,01,germany,29
+1921,02,germany,32
+1921,03,germany,59
+1921,04,germany,58
+1921,05,germany,58
+1921,06,united kingdom,39
+1921,07,united kingdom,47
+1921,08,russia,32
+1921,09,united kingdom,23
+1921,10,united kingdom,31
+1921,11,united kingdom,49
+1921,12,france,51
+1922,01,france,38
+1922,02,united kingdom,22
+1922,03,germany,27
+1922,04,russia,37
+1922,05,russia,54
+1922,06,united kingdom,32
+1922,07,germany,31
+1922,08,germany,24
+1922,09,united kingdom,45
+1922,10,united kingdom,35
+1922,11,france,29
+1922,12,france,35
+1923,01,france,99
+1923,02,france,56
+1923,03,germany,45
+1923,04,united kingdom,31
+1923,05,france,34
+1923,06,united kingdom,32
+1923,07,france,37
+1923,08,germany,30
+1923,09,italy,33
+1923,10,germany,52
+1923,11,france,44
+1923,12,germany,33
+1924,01,united kingdom,21
+1924,02,france,13
+1924,03,france,26
+1924,04,germany,34
+1924,05,france,22
+1924,06,france,16
+1924,07,united kingdom,24
+1924,08,germany,33
+1924,09,france,21
+1924,10,united kingdom,19
+1924,11,united kingdom,30
+1924,12,france,37
+1925,01,france,40
+1925,02,france,30
+1925,03,germany,22
+1925,04,france,22
+1925,05,france,43
+1925,06,united kingdom,22
+1925,07,united kingdom,26
+1925,08,france,44
+1925,09,france,47
+1925,10,france,41
+1925,11,france,23
+1925,12,france,24
+1926,01,united kingdom,22
+1926,02,france,17
+1926,03,france,29
+1926,04,france,20
+1926,05,united kingdom,50
+1926,06,france,28
+1926,07,france,32
+1926,08,mexico,36
+1926,09,france,24
+1926,10,france,26
+1926,11,france,21
+1926,12,france,19
+1927,01,mexico,38
+1927,02,united kingdom,37
+1927,03,china,48
+1927,04,china,37
+1927,05,france,44
+1927,06,france,30
+1927,07,united kingdom,34
+1927,08,united kingdom,29
+1927,09,france,43
+1927,10,france,34
+1927,11,united kingdom,23
+1927,12,mexico,39
+1928,01,nicaragua,33
+1928,02,cuba,20
+1928,03,france,20
+1928,04,germany,51
+1928,05,japan,21
+1928,06,france,22
+1928,07,france,31
+1928,08,france,34
+1928,09,germany,25
+1928,10,france,22
+1928,11,united kingdom,22
+1928,12,united kingdom,30
+1929,01,united kingdom,21
+1929,02,united kingdom,27
+1929,03,mexico,38
+1929,04,france,37
+1929,05,france,38
+1929,06,united kingdom,31
+1929,07,united kingdom,37
+1929,08,united kingdom,53
+1929,09,united kingdom,54
+1929,10,united kingdom,34
+1929,11,united kingdom,24
+1929,12,united kingdom,31
+1930,01,united kingdom,40
+1930,02,france,33
+1930,03,france,41
+1930,04,united kingdom,40
+1930,05,united kingdom,41
+1930,06,united kingdom,33
+1930,07,united kingdom,21
+1930,08,united kingdom,23
+1930,09,united kingdom,26
+1930,10,united kingdom,28
+1930,11,united kingdom,31
+1930,12,russia,20
+1931,01,united kingdom,29
+1931,02,united kingdom,25
+1931,03,united kingdom,25
+1931,04,nicaragua,26
+1931,05,united kingdom,37
+1931,06,germany,60
+1931,07,germany,80
+1931,08,united kingdom,41
+1931,09,united kingdom,45
+1931,10,japan,44
+1931,11,japan,67
+1931,12,japan,29
+1932,01,japan,49
+1932,02,japan,114
+1932,03,japan,40
+1932,04,united kingdom,21
+1932,05,japan,23
+1932,06,france,19
+1932,07,germany,26
+1932,08,united kingdom,28
+1932,09,france,24
+1932,10,united kingdom,35
+1932,11,united kingdom,36
+1932,12,france,32
+1933,01,japan,36
+1933,02,japan,37
+1933,03,united kingdom,31
+1933,04,germany,23
+1933,05,united kingdom,45
+1933,06,united kingdom,51
+1933,07,united kingdom,35
+1933,08,cuba,32
+1933,09,cuba,33
+1933,10,germany,39
+1933,11,russia,21
+1933,12,france,21
+1934,01,japan,13
+1934,02,france,31
+1934,03,france,28
+1934,04,united kingdom,16
+1934,05,france,22
+1934,06,germany,25
+1934,07,germany,33
+1934,08,germany,21
+1934,09,united kingdom,18
+1934,10,united kingdom,27
+1934,11,united kingdom,20
+1934,12,russia,20
+1935,01,germany,12
+1935,02,united kingdom,18
+1935,03,germany,26
+1935,04,germany,23
+1935,05,germany,20
+1935,06,japan,22
+1935,07,germany,28
+1935,08,italy,31
+1935,09,italy,51
+1935,10,italy,91
+1935,11,italy,58
+1935,12,italy,34
+1936,01,united kingdom,30
+1936,02,japan,25
+1936,03,united kingdom,46
+1936,04,italy,35
+1936,05,italy,37
+1936,06,france,13
+1936,07,spain,32
+1936,08,spain,76
+1936,09,spain,37
+1936,10,spain,47
+1936,11,spain,52
+1936,12,united kingdom,47
+1937,01,germany,24
+1937,02,spain,20
+1937,03,spain,22
+1937,04,spain,31
+1937,05,spain,31
+1937,06,spain,32
+1937,07,japan,33
+1937,08,china,62
+1937,09,china,40
+1937,10,japan,39
+1937,11,japan,27
+1937,12,japan,53
+1938,01,japan,20
+1938,02,united kingdom,30
+1938,03,germany,32
+1938,04,france,20
+1938,05,germany,27
+1938,06,spain,23
+1938,07,united kingdom,30
+1938,08,japan,30
+1938,09,czechia,72
+1938,10,germany,43
+1938,11,germany,34
+1938,12,germany,40
+1939,01,spain,32
+1939,02,france,35
+1939,03,germany,47
+1939,04,united kingdom,44
+1939,05,united kingdom,27
+1939,06,united kingdom,34
+1939,07,united kingdom,31
+1939,08,united kingdom,45
+1939,09,germany,64
+1939,10,russia,55
+1939,11,united kingdom,53
+1939,12,russia,74
+1940,01,russia,45
+1940,02,united kingdom,36
+1940,03,united kingdom,40
+1940,04,norway,55
+1940,05,germany,56
+1940,06,france,79
+1940,07,united kingdom,65
+1940,08,united kingdom,93
+1940,09,united kingdom,71
+1940,10,united kingdom,65
+1940,11,united kingdom,60
+1940,12,united kingdom,53
+1941,01,united kingdom,71
+1941,02,united kingdom,64
+1941,03,united kingdom,75
+1941,04,united kingdom,77
+1941,05,united kingdom,89
+1941,06,united kingdom,56
+1941,07,russia,59
+1941,08,russia,66
+1941,09,russia,57
+1941,10,russia,68
+1941,11,germany,34
+1941,12,japan,62
+1942,01,japan,73
+1942,02,japan,78
+1942,03,japan,56
+1942,04,united kingdom,42
+1942,05,united kingdom,37
+1942,06,united kingdom,48
+1942,07,russia,42
+1942,08,japan,38
+1942,09,russia,39
+1942,10,japan,32
+1942,11,france,30
+1942,12,japan,35
+1943,01,germany,35
+1943,02,russia,30
+1943,03,germany,57
+1943,04,united kingdom,33
+1943,05,japan,28
+1943,06,italy,25
+1943,07,italy,55
+1943,08,germany,46
+1943,09,italy,59
+1943,10,italy,38
+1943,11,germany,41
+1943,12,germany,40
+1944,01,germany,42
+1944,02,russia,42
+1944,03,germany,40
+1944,04,russia,30
+1944,05,germany,35
+1944,06,germany,42
+1944,07,germany,57
+1944,08,germany,63
+1944,09,germany,57
+1944,10,germany,63
+1944,11,japan,39
+1944,12,japan,43
+1945,01,germany,53
+1945,02,germany,54
+1945,03,germany,57
+1945,04,germany,74
+1945,05,russia,52
+1945,06,japan,56
+1945,07,japan,69
+1945,08,japan,96
+1945,09,japan,72
+1945,10,japan,31
+1945,11,russia,34
+1945,12,russia,50
+1946,01,russia,31
+1946,02,russia,39
+1946,03,russia,84
+1946,04,russia,69
+1946,05,russia,43
+1946,06,russia,45
+1946,07,russia,58
+1946,08,russia,62
+1946,09,russia,46
+1946,10,russia,41
+1946,11,russia,46
+1946,12,russia,40
+1947,01,united kingdom,20
+1947,02,russia,37
+1947,03,russia,34
+1947,04,russia,39
+1947,05,russia,33
+1947,06,russia,48
+1947,07,russia,41
+1947,08,united kingdom,33
+1947,09,russia,38
+1947,10,russia,42
+1947,11,russia,44
+1947,12,russia,44
+1948,01,russia,34
+1948,02,russia,35
+1948,03,russia,56
+1948,04,russia,43
+1948,05,israel,48
+1948,06,russia,41
+1948,07,russia,55
+1948,08,russia,93
+1948,09,russia,60
+1948,10,russia,52
+1948,11,china,28
+1948,12,russia,35
+1949,01,israel,47
+1949,02,russia,25
+1949,03,russia,51
+1949,04,russia,52
+1949,05,germany,53
+1949,06,russia,49
+1949,07,russia,35
+1949,08,united kingdom,19
+1949,09,russia,38
+1949,10,russia,47
+1949,11,russia,36
+1949,12,russia,25
+1950,01,russia,28
+1950,02,russia,32
+1950,03,russia,32
+1950,04,russia,30
+1950,05,germany,42
+1950,06,russia,30
+1950,07,russia,21
+1950,08,russia,35
+1950,09,russia,29
+1950,10,russia,36
+1950,11,china,43
+1950,12,china,35
+1951,01,china,32
+1951,02,russia,29
+1951,03,russia,32
+1951,04,united kingdom,20
+1951,05,china,28
+1951,06,russia,30
+1951,07,united kingdom,20
+1951,08,russia,40
+1951,09,japan,21
+1951,10,united kingdom,46
+1951,11,russia,26
+1951,12,russia,22
+1952,01,united kingdom,25
+1952,02,united kingdom,28
+1952,03,russia,25
+1952,04,russia,24
+1952,05,germany,36
+1952,06,russia,35
+1952,07,russia,23
+1952,08,russia,24
+1952,09,russia,27
+1952,10,russia,30
+1952,11,russia,14
+1952,12,russia,24
+1953,01,russia,15
+1953,02,russia,23
+1953,03,russia,55
+1953,04,russia,44
+1953,05,russia,24
+1953,06,south korea,30
+1953,07,russia,41
+1953,08,russia,33
+1953,09,russia,29
+1953,10,russia,26
+1953,11,russia,24
+1953,12,russia,30
+1954,01,russia,28
+1954,02,russia,29
+1954,03,china,21
+1954,04,china,35
+1954,05,france,40
+1954,06,guatemala,32
+1954,07,france,54
+1954,08,france,40
+1954,09,germany,44
+1954,10,germany,32
+1954,11,russia,35
+1954,12,france,39
+1955,01,china,31
+1955,02,russia,23
+1955,03,russia,34
+1955,04,russia,34
+1955,05,russia,56
+1955,06,russia,56
+1955,07,russia,53
+1955,08,russia,45
+1955,09,russia,59
+1955,10,russia,57
+1955,11,russia,49
+1955,12,russia,54
+1956,01,russia,39
+1956,02,russia,54
+1956,03,russia,46
+1956,04,russia,71
+1956,05,russia,55
+1956,06,russia,63
+1956,07,russia,45
+1956,08,egypt,71
+1956,09,egypt,69
+1956,10,russia,75
+1956,11,russia,98
+1956,12,hungary,54
+1957,01,russia,38
+1957,02,israel,47
+1957,03,egypt,48
+1957,04,egypt,40
+1957,05,russia,39
+1957,06,russia,39
+1957,07,russia,59
+1957,08,russia,68
+1957,09,russia,41
+1957,10,russia,67
+1957,11,russia,64
+1957,12,russia,46
+1958,01,russia,52
+1958,02,russia,28
+1958,03,russia,37
+1958,04,russia,60
+1958,05,russia,39
+1958,06,russia,42
+1958,07,russia,61
+1958,08,russia,35
+1958,09,taiwan,32
+1958,10,russia,36
+1958,11,russia,62
+1958,12,germany,23
+1959,01,russia,59
+1959,02,russia,52
+1959,03,russia,43
+1959,04,russia,48
+1959,05,russia,41
+1959,06,germany,37
+1959,07,russia,62
+1959,08,russia,53
+1959,09,russia,63
+1959,10,russia,44
+1959,11,russia,34
+1959,12,russia,32
+1960,01,russia,42
+1960,02,russia,41
+1960,03,russia,42
+1960,04,russia,27
+1960,05,russia,76
+1960,06,russia,37
+1960,07,russia,46
+1960,08,russia,53
+1960,09,russia,51
+1960,10,russia,36
+1960,11,dr congo,28
+1960,12,russia,34
+1961,01,russia,34
+1961,02,russia,36
+1961,03,dr congo,38
+1961,04,cuba,55
+1961,05,laos,31
+1961,06,russia,38
+1961,07,russia,40
+1961,08,germany,79
+1961,09,russia,57
+1961,10,russia,75
+1961,11,russia,56
+1961,12,russia,37
+1962,01,russia,45
+1962,02,russia,50
+1962,03,algeria,41
+1962,04,russia,44
+1962,05,russia,27
+1962,06,russia,30
+1962,07,algeria,38
+1962,08,russia,55
+1962,09,russia,54
+1962,10,cuba,64
+1962,11,russia,71
+1962,12,russia,38
+1963,01,france,31
+1963,02,russia,39
+1963,03,russia,51
+1963,04,russia,44
+1963,05,russia,35
+1963,06,russia,35
+1963,07,russia,57
+1963,08,russia,33
+1963,09,russia,44
+1963,10,russia,42
+1963,11,russia,44
+1963,12,russia,36
+1965,01,russia,22
+1965,02,vietnam,44
+1965,03,russia,33
+1965,04,vietnam,65
+1965,05,dominican republic,45
+1965,06,vietnam,41
+1965,07,vietnam,43
+1965,08,vietnam,41
+1965,09,india,52
+1965,10,vietnam,33
+1965,11,vietnam,37
+1965,12,vietnam,52
+1966,01,vietnam,55
+1966,02,vietnam,66
+1966,03,vietnam,39
+1966,04,vietnam,38
+1966,05,vietnam,34
+1966,06,vietnam,31
+1966,07,vietnam,52
+1966,08,vietnam,39
+1966,09,vietnam,45
+1966,10,vietnam,43
+1966,11,vietnam,23
+1966,12,vietnam,34
+1967,01,vietnam,43
+1967,02,vietnam,38
+1967,03,vietnam,42
+1967,04,vietnam,38
+1967,05,vietnam,44
+1967,06,israel,58
+1967,07,israel,42
+1967,08,vietnam,38
+1967,09,vietnam,41
+1967,10,russia,42
+1967,11,vietnam,32
+1967,12,vietnam,35
+1968,01,vietnam,35
+1968,02,vietnam,57
+1968,03,vietnam,31
+1968,04,vietnam,43
+1968,05,france,47
+1968,06,france,27
+1968,07,russia,46
+1968,08,russia,50
+1968,09,russia,50
+1968,10,vietnam,31
+1968,11,france,38
+1968,12,israel,20
+1969,01,russia,19
+1969,02,germany,14
+1969,03,russia,36
+1969,04,russia,19
+1969,05,vietnam,21
+1969,06,vietnam,16
+1969,07,russia,24
+1969,08,vietnam,21
+1969,09,vietnam,26
+1969,10,vietnam,20
+1969,11,vietnam,32
+1969,12,israel,18
+1970,01,israel,31
+1970,02,israel,26
+1970,03,cambodia,25
+1970,04,cambodia,30
+1970,05,cambodia,61
+1970,06,cambodia,37
+1970,07,israel,21
+1970,08,israel,28
+1970,09,jordan,34
+1970,10,russia,27
+1970,11,russia,19
+1970,12,russia,24
+1971,01,russia,20
+1971,02,laos,34
+1971,03,laos,29
+1971,04,china,21
+1971,05,russia,21
+1971,06,vietnam,23
+1971,07,vietnam,15
+1971,08,russia,17
+1971,09,russia,19
+1971,10,russia,25
+1971,11,pakistan,24
+1971,12,pakistan,39
+1972,01,vietnam,11
+1972,02,china,18
+1972,03,russia,16
+1972,04,vietnam,38
+1972,05,vietnam,40
+1972,06,vietnam,27
+1972,07,vietnam,21
+1972,08,russia,22
+1972,09,russia,22
+1972,10,vietnam,37
+1972,11,vietnam,31
+1972,12,vietnam,30
+1973,01,vietnam,34
+1973,02,vietnam,27
+1973,03,vietnam,26
+1973,04,vietnam,18
+1973,05,cambodia,11
+1973,06,russia,18
+1973,07,cambodia,12
+1973,08,cambodia,22
+1973,09,russia,23
+1973,10,israel,62
+1973,11,israel,35
+1973,12,israel,19
+1974,01,israel,20
+1974,02,russia,11
+1974,03,russia,15
+1974,04,israel,18
+1974,05,israel,23
+1974,06,russia,23
+1974,07,greece,22
+1974,08,cyprus,22
+1974,09,france,8
+1974,10,russia,17
+1974,11,israel,15
+1974,12,russia,13
+1975,01,russia,12
+1975,02,israel,12
+1975,03,vietnam,31
+1975,04,vietnam,45
+1975,05,cambodia,13
+1975,06,israel,13
+1975,07,russia,17
+1975,08,portugal,24
+1975,09,israel,10
+1975,10,russia,13
+1975,11,spain,14
+1975,12,russia,22
+1976,01,angola,22
+1976,02,russia,19
+1976,03,lebanon,17
+1976,04,lebanon,17
+1976,05,russia,12
+1976,06,lebanon,29
+1976,07,lebanon,13
+1976,08,south africa,22
+1976,09,zimbabwe,14
+1976,10,lebanon,9
+1976,11,israel,11
+1976,12,china,10
+1977,01,russia,12
+1977,02,russia,14
+1977,03,russia,17
+1977,04,russia,18
+1977,05,russia,12
+1977,06,russia,18
+1977,07,russia,16
+1977,08,israel,15
+1977,09,israel,9
+1977,10,russia,15
+1977,11,israel,25
+1977,12,israel,31
+1978,01,israel,8
+1978,02,russia,8
+1978,03,israel,9
+1978,04,russia,11
+1978,05,russia,10
+1978,06,cuba,4
+1978,07,united kingdom,7
+1978,08,russia,1
+1978,11,russia,7
+1978,12,iran,12
+1979,01,china,8
+1979,02,iran,8
+1979,03,china,6
+1979,04,russia,3
+1979,05,egypt,4
+1979,06,russia,5
+1979,07,vietnam,4
+1979,08,israel,6
+1979,09,cuba,9
+1979,10,south korea,6
+1979,11,iran,13
+1979,12,iran,19
+1980,01,russia,19
+1980,02,russia,14
+1980,03,iran,8
+1980,04,iran,18
+1980,05,cuba,8
+1980,06,israel,8
+1980,07,iran,20
+1980,08,poland,31
+1980,09,iraq,19
+1980,10,iran,40
+1980,11,iran,19
+1980,12,iran,22
+1981,01,iran,20
+1981,02,poland,11
+1981,03,poland,13
+1981,04,poland,14
+1981,05,syria,15
+1981,06,israel,14
+1981,07,israel,12
+1981,08,poland,13
+1981,09,poland,15
+1981,10,egypt,16
+1981,11,russia,19
+1981,12,poland,21
+1982,01,poland,23
+1982,02,poland,10
+1982,03,brazil,12
+1982,04,argentina,16
+1982,05,argentina,19
+1982,06,israel,27
+1982,07,israel,18
+1982,08,lebanon,18
+1982,09,israel,34
+1982,10,russia,12
+1982,11,russia,14
+1982,12,russia,11
+1983,01,russia,10
+1983,02,israel,13
+1983,03,russia,10
+1983,04,russia,13
+1983,05,russia,15
+1983,06,russia,14
+1983,07,russia,9
+1983,08,russia,20
+1983,09,russia,26
+1983,10,lebanon,12
+1983,11,russia,15
+1983,12,lebanon,18
+1984,01,lebanon,14
+1984,02,lebanon,21
+1984,03,lebanon,10
+1984,04,nicaragua,10
+1984,05,russia,15
+1984,06,russia,9
+1984,07,russia,11
+1984,08,brazil,6
+1984,09,russia,11
+1984,10,brazil,10
+1984,11,russia,16
+1984,12,russia,15
+1985,01,israel,9
+1985,02,israel,10
+1985,03,russia,15
+1985,04,japan,13
+1985,05,russia,10
+1985,06,lebanon,26
+1985,07,lebanon,10
+1985,08,south africa,19
+1985,09,russia,14
+1985,10,russia,14
+1985,11,russia,27
+1985,12,russia,13
+1986,01,libya,13
+1986,02,russia,10
+1986,03,russia,9
+1986,04,libya,17
+1986,05,russia,17
+1986,06,south africa,17
+1986,07,south africa,11
+1986,08,russia,22
+1986,09,russia,26
+1986,10,russia,33
+1986,11,iran,26
+1986,12,iran,19
+1987,01,iran,22
+1987,02,iran,15
+1987,03,russia,17
+1987,04,russia,23
+1987,05,russia,18
+1987,06,south korea,13
+1987,07,russia,17
+1987,08,iran,20
+1987,09,iran,14
+1987,10,russia,20
+1987,11,russia,18
+1987,12,russia,15
+1988,01,israel,18
+1988,02,russia,18
+1988,03,russia,12
+1988,04,russia,16
+1988,05,russia,32
+1988,06,russia,21
+1988,07,russia,23
+1988,08,russia,12
+1988,09,russia,13
+1988,10,russia,20
+1988,11,russia,17
+1988,12,russia,18
+1989,01,russia,20
+1989,02,russia,18
+1989,03,russia,22
+1989,04,russia,22
+1989,05,china,27
+1989,06,china,32
+1989,07,russia,17
+1989,08,russia,16
+1989,09,russia,16
+1989,10,germany,18
+1989,11,germany,23
+1989,12,germany,23
+1990,01,russia,24
+1990,02,russia,27
+1990,03,russia,23
+1990,04,russia,22
+1990,05,russia,27
+1990,06,russia,18
+1990,07,russia,23
+1990,08,iraq,50
+1990,09,iraq,27
+1990,10,russia,12
+1990,11,iraq,21
+1990,12,russia,24
+1991,01,iraq,46
+1991,02,iraq,48
+1991,03,iraq,36
+1991,04,iraq,26
+1991,05,russia,10
+1991,06,russia,13
+1991,07,russia,20
+1991,08,russia,33
+1991,09,russia,32
+1991,10,russia,16
+1991,11,russia,19
+1991,12,russia,27
+1992,01,russia,21
+1992,02,russia,12
+1992,03,russia,11
+1992,04,russia,14
+1992,05,russia,12
+1992,06,russia,13
+1992,07,iraq,10
+1992,08,japan,11
+1992,09,germany,12
+1992,10,japan,7
+1992,11,france,6
+1992,12,somalia,25
+1993,01,iraq,18
+1993,02,japan,10
+1993,03,russia,13
+1993,04,russia,15
+1993,05,russia,7
+1993,06,china,10
+1993,07,japan,17
+1993,08,israel,14
+1993,09,israel,15
+1993,10,somalia,19
+1993,11,japan,9
+1993,12,russia,12
+1994,01,japan,11
+1994,02,japan,11
+1994,03,israel,14
+1994,04,japan,10
+1994,05,israel,8
+1994,06,japan,15
+1994,07,rwanda,22
+1994,08,cuba,16
+1994,09,haiti,24
+1994,10,haiti,16
+1994,11,china,5
+1994,12,russia,13
+1995,01,russia,18
+1995,02,mexico,14
+1995,03,japan,8
+1995,04,japan,7
+1995,05,japan,13
+1995,06,japan,20
+1995,07,china,8
+1995,08,china,11
+1995,09,china,6
+1995,10,japan,12
+1995,11,israel,12
+1995,12,russia,11
+1996,01,japan,7
+1996,02,cuba,5
+1996,03,israel,11
+1996,04,israel,13
+1996,05,russia,8
+1996,06,russia,16
+1996,07,russia,12
+1996,08,russia,8
+1996,09,iraq,18
+1996,10,japan,7
+1996,11,russia,8
+1996,12,serbia,7
+1997,01,israel,7
+1997,02,china,11
+1997,03,china,13
+1997,04,china,5
+1997,05,dr congo,15
+1997,06,hong kong,7
+1997,07,mexico,12
+1997,08,israel,9
+1997,09,israel,6
+1997,10,india,11
+1997,11,iraq,18
+1997,12,japan,10
+1998,01,indonesia,11
+1998,02,iraq,15
+1998,03,china,10
+1998,04,china,8
+1998,05,indonesia,13
+1998,06,china,26
+1998,07,russia,11
+1998,08,russia,19
+1998,09,russia,14
+1998,10,kosovo,8
+1998,11,iraq,11
+1998,12,iraq,8
+1999,01,brazil,11
+1999,02,kosovo,12
+1999,03,kosovo,12
+1999,04,kosovo,16
+1999,05,kosovo,21
+1999,06,kosovo,28
+1999,07,russia,8
+1999,08,russia,12
+1999,09,russia,9
+1999,10,russia,9
+1999,11,china,9
+1999,12,russia,15
+2000,01,russia,10
+2000,02,russia,10
+2000,03,china,7
+2000,04,cuba,17
+2000,05,china,16
+2000,06,france,7
+2000,07,china,11
+2000,08,russia,13
+2000,09,china,10
+2000,10,china,12
+2000,11,united kingdom,11
+2000,12,russia,13
+2001,01,united kingdom,10
+2001,02,united kingdom,10
+2001,03,china,16
+2001,04,china,20
+2001,05,china,16
+2001,06,france,16
+2001,07,china,16
+2001,08,south korea,17
+2001,09,afghanistan,13
+2001,10,afghanistan,22
+2001,11,afghanistan,38
+2001,12,afghanistan,44
+2002,01,japan,26
+2002,02,japan,16
+2002,03,israel,24
+2002,04,japan,32
+2002,05,japan,23
+2002,06,israel,14
+2002,07,japan,23
+2002,08,japan,18
+2002,09,iraq,23
+2002,10,japan,33
+2002,11,japan,28
+2002,12,iraq,29
+2003,01,iraq,28
+2003,02,iraq,33
+2003,03,iraq,67
+2003,04,iraq,82
+2003,05,iraq,29
+2003,06,iraq,20
+2003,07,iraq,28
+2003,08,iraq,27
+2003,09,iraq,35
+2003,10,iraq,32
+2003,11,japan,31
+2003,12,japan,30
+2004,01,iraq,22
+2004,02,iraq,24
+2004,03,japan,30
+2004,04,iraq,35
+2004,05,iraq,38
+2004,06,iraq,37
+2004,07,iraq,24
+2004,08,iraq,27
+2004,09,iraq,17
+2004,10,iraq,29
+2004,11,iraq,18
+2004,12,china,17
+2005,01,iraq,36
+2005,02,iraq,17
+2005,03,iraq,17
+2005,04,iraq,15
+2005,05,iraq,16
+2005,06,iraq,15
+2005,07,united kingdom,19
+2005,08,iraq,15
+2005,09,iraq,11
+2005,10,iraq,19
+2005,11,iraq,18
+2005,12,iraq,25
+2006,01,iraq,6
+2006,02,iraq,15
+2006,03,iraq,21
+2006,04,iraq,16
+2006,05,iraq,15
+2006,06,iraq,22
+2006,07,israel,27
+2006,08,israel,16
+2006,09,iraq,20
+2006,10,iraq,23
+2006,11,iraq,25
+2006,12,iraq,31
+2007,01,iraq,30
+2007,02,iraq,27
+2007,03,iraq,26
+2007,04,iraq,23
+2007,05,iraq,25
+2007,06,iraq,17
+2007,07,iraq,22
+2007,08,iraq,18
+2007,09,iraq,19
+2007,10,iraq,16
+2007,11,iraq,11
+2007,12,china,10
+2008,01,iraq,7
+2008,02,china,8
+2008,03,iraq,15
+2008,04,china,11
+2008,05,china,17
+2008,06,iraq,10
+2008,07,china,16
+2008,08,china,26
+2008,09,iraq,4
+2008,10,iraq,6
+2008,11,india,7
+2008,12,india,9
+2009,01,israel,11
+2009,02,iraq,9
+2009,03,china,9
+2009,04,china,11
+2009,05,pakistan,9
+2009,06,iran,23
+2009,07,china,14
+2009,08,afghanistan,10
+2009,09,afghanistan,15
+2009,10,afghanistan,11
+2009,11,afghanistan,10
+2009,12,china,8
+2010,01,haiti,17
+2010,02,haiti,12
+2010,03,china,9
+2010,04,china,13
+2010,05,united kingdom,6
+2010,06,china,16
+2010,07,china,9
+2010,08,china,10
+2010,09,china,19
+2010,10,china,16
+2010,11,china,13
+2010,12,china,12
+2011,01,china,11
+2011,02,egypt,26
+2011,03,japan,36
+2011,04,japan,11
+2011,05,china,12
+2011,06,greece,13
+2011,07,china,7
+2011,08,libya,7
+2011,09,china,10
+2011,10,china,9
+2011,11,egypt,13
+2011,12,china,9
+2012,01,iran,10
+2012,02,iran,9
+2012,03,china,11
+2012,04,china,18
+2012,05,china,19
+2012,06,spain,11
+2012,07,syria,11
+2012,08,syria,13
+2012,09,libya,7
+2012,10,china,10
+2012,11,israel,7
+2012,12,syria,8
+2013,01,china,9
+2013,02,china,6
+2013,03,syria,11
+2013,04,china,9
+2013,05,syria,10
+2013,06,china,16
+2013,07,china,13
+2013,08,egypt,13
+2013,09,syria,21
+2013,10,china,4
+2013,11,iran,12
+2013,12,china,9
+2014,01,syria,6
+2014,02,ukraine,10
+2014,03,russia,18
+2014,04,ukraine,9
+2014,05,china,11
+2014,06,iraq,24
+2014,07,israel,12
+2014,08,iraq,11
+2014,09,china,7
+2014,10,liberia,7
+2014,11,china,7
+2014,12,cuba,13
+2015,01,france,18
+2015,02,china,9
+2015,03,iran,13
+2015,04,china,13
+2015,05,china,8
+2015,06,greece,16
+2015,07,greece,29
+2015,08,china,26
+2015,09,china,12
+2015,10,syria,17
+2015,11,france,30
+2015,12,china,13
+2016,01,iran,10
+2016,02,china,9
+2016,03,china,11
+2016,04,china,11
+2016,05,brazil,6
+2016,06,china,11
+2016,07,russia,10
+2016,08,syria,7
+2016,09,china,11
+2016,10,china,8
+2016,11,china,11
+2016,12,russia,24
+2017,01,russia,12
+2017,02,china,7
+2017,03,russia,13
+2017,04,russia,16
+2017,05,russia,14
+2017,06,china,12
+2017,07,china,17
+2017,08,china,18
+2017,09,north korea,14
+2017,10,china,12
+2017,11,russia,8
+2017,12,china,6
+2018,01,china,13
+2018,02,russia,21
+2018,03,china,12
+2018,04,china,9
+2018,05,iran,10
+2018,06,china,17
+2018,07,china,18
+2018,08,china,22
+2018,09,china,16
+2018,10,china,15
+2018,11,india,1
