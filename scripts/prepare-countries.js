@@ -40,10 +40,6 @@ const customAdd = [
   }
 ];
 
-// rules
-// common in other demonym: check that other demonym doesn't exist (eg. Georgia and South Georgian)
-// common means other thing https://github.com/the-pudding/nyt-map-data/issues/5
-
 const renaming = d3.csvParse(
   fs.readFileSync('./input/geographical_renaming.csv', 'utf-8')
 );

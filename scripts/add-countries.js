@@ -166,4 +166,14 @@ function init() {
   // console.log(r);
 }
 
-init();
+// init();
+
+const o = countryData.map(d => {
+  return {
+    country: [d.commonLower].concat(d.custom).join(' | '),
+    demonym: d.demonymLower,
+    cities: d.cities.join(' | ')
+  };
+});
+
+fs.writeFileSync('test.csv', d3.csvFormat(o));
