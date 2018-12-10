@@ -10,9 +10,7 @@
     "countries": "node scripts/countries.js",
     "add-countries": "node scripts/add-countries.js",
     "analyze": "node scripts/analyze.js",
-    "by-year": "node scripts/by-year.js",
-    "by-month": "node scripts/by-month.js",
-    "test": "node scripts/test.js"
+    "common-words": "node scripts/common-words.js"
   },
   "keywords": [],
   "author": "",

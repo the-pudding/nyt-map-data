@@ -1,46 +1,46 @@
 year,country,count
-1900,united kingdom,360
-1901,united kingdom,430
-1902,united kingdom,318
-1903,united kingdom,211
+1900,united kingdom,371
+1901,united kingdom,445
+1902,united kingdom,327
+1903,united kingdom,216
 1904,russia,648
 1905,russia,468
-1906,united kingdom,207
+1906,united kingdom,216
 1907,france,202
 1908,france,205
-1909,united kingdom,256
+1909,united kingdom,268
 1910,france,167
-1911,united kingdom,181
-1912,united kingdom,187
-1913,united kingdom,216
+1911,united kingdom,187
+1912,united kingdom,193
+1913,united kingdom,228
 1914,germany,1242
 1915,germany,1682
-1916,germany,1372
-1917,germany,1493
-1918,germany,1704
-1919,germany,723
-1920,united kingdom,309
-1921,united kingdom,415
-1922,united kingdom,346
+1916,germany,1388
+1917,germany,1496
+1918,germany,1707
+1919,germany,733
+1920,united kingdom,314
+1921,united kingdom,423
+1922,united kingdom,353
 1923,france,473
 1924,france,249
 1925,france,376
 1926,france,288
-1927,france,314
+1927,united kingdom,324
 1928,france,253
-1929,united kingdom,372
-1930,united kingdom,361
-1931,united kingdom,395
-1932,japan,313
-1933,united kingdom,321
-1934,united kingdom,218
+1929,united kingdom,391
+1930,united kingdom,384
+1931,united kingdom,417
+1932,united kingdom,313
+1933,united kingdom,345
+1934,united kingdom,228
 1935,italy,345
-1936,spain,303
+1936,united kingdom,309
 1937,japan,283
-1938,germany,318
-1939,germany,406
-1940,united kingdom,658
-1941,united kingdom,612
+1938,germany,319
+1939,united kingdom,430
+1940,united kingdom,682
+1941,united kingdom,621
 1942,japan,498
 1943,germany,425
 1944,germany,535
@@ -90,7 +90,7 @@ year,country,count
 1989,russia,200
 1990,russia,240
 1991,russia,226
-1992,russia,106
+1992,japan,107
 1993,russia,94
 1994,japan,81
 1995,japan,106
@@ -104,7 +104,7 @@ year,country,count
 2003,iraq,431
 2004,iraq,309
 2005,iraq,218
-2006,iraq,233
+2006,iraq,232
 2007,iraq,241
 2008,china,118
 2009,china,93

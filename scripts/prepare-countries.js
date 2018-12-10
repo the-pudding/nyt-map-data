@@ -8,13 +8,51 @@ const customDem = {
   Congolese: 'DR Congo',
   Dominican: 'Dominican Republic',
   Indian: 'India',
-  Norwegian: 'Norway'
+  Norwegian: 'Norway',
+  Chinamen: 'China',
+  Chinaman: 'China',
+  Sino: 'China',
+  Croat: 'Croatia',
+  Dane: 'Denmark',
+  Franco: 'France',
+  Brit: 'United Kingdom',
+  Welsh: 'United Kingdom',
+  Scotish: 'United Kingdom',
+  Anglo: 'United Kingdom',
+  Greco: 'Greece',
+  Catalan: 'Spain',
+  Persian: 'Iran',
+  Italo: 'Italy',
+  Nipponese: 'Japan',
+  Jap: 'Japan',
+  Lao: 'Laos',
+  Maori: 'New Zealand',
+  Russo: 'Russia',
+  Bolshevik: 'Russia',
+  Anatolian: 'Turkey',
+  Turk: 'Turkey',
+  Jugoslav: 'Yugoslavia',
+  Rumanian: 'Romania',
+  Czech: 'Czechoslovakia'
 };
 
 const customOther = {
   'DR Congo': ['congo'],
-  'United Kingdom': ['u.k.', 'england'],
-  Russia: ['u.s.s.r.', 'soviet']
+  'United Kingdom': ['u.k.', 'england', 'wales', 'scotland', 'briton'],
+  Germany: ['weimar', 'deutschland'],
+  Russia: ['u.s.s.r.', 'soviet'],
+  Spain: ['basque', 'catalonia'],
+  'Indo-China': ['indochina'],
+  Iran: ['persia'],
+  Japan: ['nippon'],
+  Libya: ['benghazi'],
+  Netherlands: ['holland'],
+  Palestine: ['gaza'],
+  Sudan: ['darfur'],
+  Turkey: ['anatolia'],
+  Romania: ['rumania'],
+  Yugoslavia: ['jugoslavia'],
+  'South Africa': ['boer']
 };
 
 const customExclude = {
@@ -37,6 +75,14 @@ const customAdd = [
   {
     common: 'Prussia',
     demonym: 'Prussian'
+  },
+  {
+    common: 'Austria-Hungary',
+    demonym: 'Austro'
+  },
+  {
+    common: 'Indo-China',
+    demonym: 'Indo-Chinese'
   }
 ];
 

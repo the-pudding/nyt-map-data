@@ -109,7 +109,7 @@ function notUSA(arr) {
 function addCountry(d, cb) {
   const { headline } = d;
   const headlineLower = headline.toLowerCase();
-  const headlineCap = capitalize(headlineLower);
+  // const headlineCap = capitalize(headlineLower);
   // 1. country (common)
   const common = countryData
     .map(c => getCommonMatch({ c, h: headlineLower }))
@@ -166,14 +166,16 @@ function init() {
   // console.log(r);
 }
 
-// init();
+function variations() {
+  const o = countryData.map(d => {
+    return {
+      country: [d.commonLower].concat(d.custom).join(' | '),
+      demonym: d.demonymLower,
+      cities: d.cities.join(' | ')
+    };
+  });
 
-const o = countryData.map(d => {
-  return {
-    country: [d.commonLower].concat(d.custom).join(' | '),
-    demonym: d.demonymLower,
-    cities: d.cities.join(' | ')
-  };
-});
+  fs.writeFileSync('./output/variations.csv', d3.csvFormat(o));
+}
 
-fs.writeFileSync('test.csv', d3.csvFormat(o));
+init();
