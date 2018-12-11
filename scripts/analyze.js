@@ -33,7 +33,7 @@ function getCountries(str) {
 
   return uniq(all);
 }
-
+let z = 0;
 function findWinner(values) {
   const dict = {};
   values.forEach(v => {
@@ -44,8 +44,13 @@ function findWinner(values) {
   });
 
   const arr = Object.keys(dict).map(d => ({ name: d, count: dict[d] }));
-  arr.sort((a, b) => d3.ascending(a.count, b.count));
-  const winner = arr.pop();
+  arr.sort((a, b) => d3.descending(a.count, b.count));
+  const winner = arr[0];
+  if (arr.length > 1 && arr[0].count === arr[1].count) {
+    console.log(arr.filter(d => d.count === arr[0].count).length);
+    z += 1;
+  }
+
   const articles = values
     .filter(v => v.countries.includes(winner.name))
     .map(a => ({ ...a, top: winner.name }));
@@ -136,3 +141,5 @@ const resultCountry = [].concat(...byCountry);
 // byCountry.sort((a, b) => d3.ascending(a.count, b.count));
 
 fs.writeFileSync(`./output/result--country.csv`, d3.csvFormat(resultCountry));
+
+console.log(z);
