@@ -2,43 +2,46 @@ const d3 = require('d3');
 const fs = require('fs');
 
 // custom dem assignment when duplicates
-const customDem = {
+const specialDem = {
   French: 'France',
   Dutch: 'Netherlands',
   Congolese: 'DR Congo',
   Dominican: 'Dominican Republic',
   Indian: 'India',
-  Norwegian: 'Norway',
-  Chinamen: 'China',
-  Chinaman: 'China',
-  Sino: 'China',
-  Croat: 'Croatia',
-  Dane: 'Denmark',
-  Franco: 'France',
-  Brit: 'United Kingdom',
-  Welsh: 'United Kingdom',
-  Scotish: 'United Kingdom',
-  Anglo: 'United Kingdom',
-  Greco: 'Greece',
-  Catalan: 'Spain',
-  Persian: 'Iran',
-  Italo: 'Italy',
-  Nipponese: 'Japan',
-  Jap: 'Japan',
-  Lao: 'Laos',
-  Maori: 'New Zealand',
-  Russo: 'Russia',
-  Bolshevik: 'Russia',
-  Anatolian: 'Turkey',
-  Turk: 'Turkey',
-  Jugoslav: 'Yugoslavia',
-  Rumanian: 'Romania',
-  Czech: 'Czechoslovakia'
+  Norwegian: 'Norway'
 };
 
-const customOther = {
+// extra dem
+const customDemonym = {
+  China: ['chinamen', 'chinaman', 'sino'],
+  Croatia: ['croat'],
+  Denmark: ['dane'],
+  France: ['franco'],
+  'United Kingdom': ['brit', 'welsh', 'scotish', 'anglo'],
+  Greece: ['greco'],
+  Spain: ['catalan'],
+  Iran: ['persian'],
+  Italy: ['italo'],
+  Japan: ['nipponese', 'jap'],
+  Laos: ['lao'],
+  'New Zealand': ['maori'],
+  Russia: ['russo', 'bolshevik'],
+  Turkey: ['anatolian', 'turk'],
+  Yugoslavia: ['jugoslav'],
+  Romania: ['rumanian'],
+  Czechoslovakia: ['czech']
+};
+
+const customCommon = {
   'DR Congo': ['congo'],
-  'United Kingdom': ['u.k.', 'england', 'wales', 'scotland', 'briton'],
+  'United Kingdom': [
+    'u.k.',
+    'england',
+    'wales',
+    'scotland',
+    'briton',
+    'britain'
+  ],
   Germany: ['weimar', 'deutschland'],
   Russia: ['u.s.s.r.', 'soviet'],
   Spain: ['basque', 'catalonia'],
@@ -52,7 +55,8 @@ const customOther = {
   Turkey: ['anatolia'],
   Romania: ['rumania'],
   Yugoslavia: ['jugoslavia'],
-  'South Africa': ['boer']
+  'South Africa': ['boer'],
+  Vietnam: ['saigon']
 };
 
 const customExclude = {
@@ -95,21 +99,24 @@ module.exports = function prepareCountries({ countries, cities }) {
   countries.forEach(c => {
     // adjust demonym to use if duplicate
     let dem = c.demonym;
-    const customD = customDem[c.demonym];
-    if (customD) {
-      dem = customD === c.common ? dem : '';
+    const specialD = specialDem[c.demonym];
+    if (specialD) {
+      dem = specialD === c.common ? dem : '';
     }
     c.demonymLower = dem.toLowerCase().trim();
     c.commonLower = c.common.toLowerCase().trim();
-    c.custom = customOther[c.common] ? [...customOther[c.common]] : [];
+    c.customCommon = customCommon[c.common] ? [...customCommon[c.common]] : [];
+    c.customDemonym = customDemonym[c.common]
+      ? [...customDemonym[c.common]]
+      : [];
   });
 
   renaming.forEach(r => {
     // merge renamings to countries
     const matchA = countries.find(c => c.common === r.current);
     const matchB = countries.find(c => c.official === r.current);
-    if (matchA) matchA.custom.push(r.previous.toLowerCase().trim());
-    else if (matchB) matchB.custom.push(r.previous.toLowerCase().trim());
+    if (matchA) matchA.customCommon.push(r.previous.toLowerCase().trim());
+    else if (matchB) matchB.customCommon.push(r.previous.toLowerCase().trim());
     else console.log('no renaming match', r);
   });
 

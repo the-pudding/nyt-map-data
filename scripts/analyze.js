@@ -5,10 +5,22 @@ const uniq = require('lodash.uniqby');
 
 mkdirp('./output');
 
+const pageOne = d3
+  .csvParse(fs.readFileSync('./output/all-page-one--lite.csv', 'utf-8'))
+  .map(d => {
+    const [year, month] = d.pub_date.split('-');
+    return { year, month };
+  });
+
+const baseline = d3
+  .nest()
+  .key(d => d.year)
+  .rollup(v => v.length)
+  .entries(pageOne);
+
 const data = d3
   .csvParse(fs.readFileSync('./output/analysis--locations.csv', 'utf-8'))
   .map(d => {
-    // '1900-01-01T00:00:00Z'
     const [year, month] = d.pub_date.split('-');
     return { ...d, year, month };
   });
@@ -43,6 +55,7 @@ function findWinner(values) {
   };
 }
 
+// add in all countries that were matched
 const withCountry = data.map(d => {
   const common = d.common ? getCountries(d.common) : [];
   const demonym = d.demonym ? getCountries(d.demonym) : [];
@@ -52,6 +65,7 @@ const withCountry = data.map(d => {
   return { ...d, countries };
 });
 
+// BY MONTH
 const byMonth = d3
   .nest()
   .key(d => `${d.year}-${d.month}`)
@@ -74,6 +88,7 @@ resultMonth.sort(
 
 fs.writeFileSync(`./output/result--month.csv`, d3.csvFormat(resultMonth));
 
+// BY YEAR
 const byYear = d3
   .nest()
   .key(d => d.year)
@@ -92,3 +107,32 @@ const resultYear = byYear.map(d => ({
 resultYear.sort((a, b) => d3.ascending(+a.year, +b.year));
 
 fs.writeFileSync(`./output/result--year.csv`, d3.csvFormat(resultYear));
+
+// BY COUNTRY
+// grab all unique countries
+const countryDict = {};
+withCountry.forEach(d => {
+  d.countries.forEach(c => (countryDict[c] = true));
+});
+
+// loop thru each country, tally total
+const byCountry = Object.keys(countryDict).map(d => {
+  return d3
+    .nest()
+    .key(v => v.year)
+    .rollup(v => ({
+      country: d,
+      count: v.length,
+      year: v[0].year
+    }))
+    .entries(withCountry.filter(v => v.countries.includes(d)))
+    .map(d => ({
+      ...d.value,
+      baseline: baseline.find(b => b.key === d.value.year).value
+    }));
+});
+
+const resultCountry = [].concat(...byCountry);
+// byCountry.sort((a, b) => d3.ascending(a.count, b.count));
+
+fs.writeFileSync(`./output/result--country.csv`, d3.csvFormat(resultCountry));

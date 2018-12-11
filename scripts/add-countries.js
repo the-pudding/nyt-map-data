@@ -56,7 +56,7 @@ function checkFix({ h, word }) {
     '!',
     's'
   ].includes(charAfter);
-  return (indexStart === 0 || hasPrefix) && hasSuffix;
+  return (indexStart === 0 || indexEnd === h.length || hasPrefix) && hasSuffix;
 }
 
 function findCountry({ c, h, inc, exc = [] }) {
@@ -84,14 +84,19 @@ function getCityMatch({ c, h }) {
 }
 
 function getDemonymMatch({ c, h }) {
-  return findCountry({ c, h, inc: [c.demonymLower], exc: c.demonymExclude });
+  return findCountry({
+    c,
+    h,
+    inc: [c.demonymLower, ...c.customDemonym],
+    exc: c.demonymExclude
+  });
 }
 
 function getCommonMatch({ c, h }) {
   return findCountry({
     c,
     h,
-    inc: [c.commonLower, ...c.custom],
+    inc: [c.commonLower, ...c.customCommon],
     exc: c.commonExclude
   });
 }
@@ -148,19 +153,17 @@ function init() {
   const headlineData = d3.csvParse(
     fs.readFileSync('./output/all-page-one--lite.csv', 'utf-8')
   );
-
-  const header = 'web_url,print_page,pub_date,headline,common,demonym,city';
-  fs.writeFileSync('./output/analysis--locations.csv', header);
+  const output = [];
   headlineData.forEach((h, i) => {
     console.log(`${i + 1} of ${headlineData.length}`);
     const d = addCountry(headlineData[i]);
-    if (d) saveToDisk(d);
+    if (d) output.push(d);
   });
+  fs.writeFileSync('./output/analysis--locations.csv', d3.csvFormat(output));
 
-  // const h = 'THE NEWFOUNDLAND FRENCH Paris Rome FISHERIES; Modus Vivendi with France Has Expired -- Complications Feared.'.toLowerCase();
-  // const h = 'Rumors of Greek Upset Are Widespread; England Is Reported Calling Ships to Malta'.toLowerCase();
+  // const h = 'On Both Sides in Cyprus, Little Hope for Peace; Among Both Greeks and Turks on Cyprus, Little Hope That Conflict Is Over Rock Music and. Rifles Back to Baking Bread'.toLowerCase();
   // const r = countryData
-  //   .map(c => getCommonMatch({ c, h }))
+  //   .map(c => getDemonymMatch({ c, h }))
   //   .filter(c => c)
   //   .join(' : ');
   // console.log(r);
