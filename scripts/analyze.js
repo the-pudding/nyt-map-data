@@ -2,6 +2,7 @@ const d3 = require('d3');
 const fs = require('fs');
 const mkdirp = require('mkdirp');
 const uniq = require('lodash.uniqby');
+const intersection = require('lodash.intersection');
 
 mkdirp('./output');
 
@@ -33,7 +34,7 @@ function getCountries(str) {
 
   return uniq(all);
 }
-let z = 0;
+
 function findWinner(values) {
   const dict = {};
   values.forEach(v => {
@@ -45,19 +46,21 @@ function findWinner(values) {
 
   const arr = Object.keys(dict).map(d => ({ name: d, count: dict[d] }));
   arr.sort((a, b) => d3.descending(a.count, b.count));
-  const winner = arr[0];
-  if (arr.length > 1 && arr[0].count === arr[1].count) {
-    console.log(arr.filter(d => d.count === arr[0].count).length);
-    z += 1;
-  }
+  const { count } = arr[0];
+  const winners = arr.filter(d => d.count === count);
+  const winnerNames = winners.map(d => d.name);
 
-  const articles = values
-    .filter(v => v.countries.includes(winner.name))
-    .map(a => ({ ...a, top: winner.name }));
-  return {
-    ...winner,
-    articles
-  };
+  const articles = winners.map(w => {
+    return values
+      .filter(v => v.countries.includes(w.name))
+      .map(a => ({
+        ...a,
+        top: w.name,
+        count
+      }));
+  });
+
+  return articles;
 }
 
 // add in all countries that were matched
@@ -77,69 +80,109 @@ const byMonth = d3
   .rollup(findWinner)
   .entries(withCountry);
 
-const flatMonth = [].concat(...byMonth.map(d => d.value.articles));
+const flatMonth = [].concat(...byMonth.map(d => [].concat(...d.value)));
 fs.writeFileSync(`./output/analysis--month.csv`, d3.csvFormat(flatMonth));
 
 const resultMonth = byMonth.map(d => ({
-  year: d.value.articles[0].year,
-  month: d.value.articles[0].month,
-  country: d.value.name,
-  count: d.value.count
+  year: d.value[0][0].year,
+  month: d.value[0][0].month,
+  country: d.value.map(v => v[0].top),
+  count: d.value[0][0].count
 }));
 
 resultMonth.sort(
   (a, b) => d3.ascending(+a.year, +b.year) || d3.ascending(+a.month, +b.month)
 );
 
-fs.writeFileSync(`./output/result--month.csv`, d3.csvFormat(resultMonth));
+// resolve tiebreak order
 
-// BY YEAR
-const byYear = d3
-  .nest()
-  .key(d => d.year)
-  .rollup(findWinner)
-  .entries(withCountry);
-
-const flatYear = [].concat(...byYear.map(d => d.value.articles));
-fs.writeFileSync(`./output/analysis--year.csv`, d3.csvFormat(flatYear));
-
-const resultYear = byYear.map(d => ({
-  year: d.value.articles[0].year,
-  country: d.value.name,
-  count: d.value.count
-}));
-
-resultYear.sort((a, b) => d3.ascending(+a.year, +b.year));
-
-fs.writeFileSync(`./output/result--year.csv`, d3.csvFormat(resultYear));
-
-// BY COUNTRY
-// grab all unique countries
-const countryDict = {};
-withCountry.forEach(d => {
-  d.countries.forEach(c => (countryDict[c] = true));
-});
-
-// loop thru each country, tally total
-const byCountry = Object.keys(countryDict).map(d => {
-  return d3
-    .nest()
-    .key(v => v.year)
-    .rollup(v => ({
-      country: d,
-      count: v.length,
-      year: v[0].year
-    }))
-    .entries(withCountry.filter(v => v.countries.includes(d)))
-    .map(d => ({
-      ...d.value,
-      baseline: baseline.find(b => b.key === d.value.year).value
+const recent = {};
+const outputMonth = resultMonth.map((m, i) => {
+  let { country } = m;
+  if (country.length > 1) {
+    // 1. if it is in prev/next
+    const prev = i > 0 ? resultMonth[i - 1].country : [];
+    const next = i < resultMonth.length - 1 ? resultMonth[i + 1].country : [];
+    const prevInt = intersection(country, prev);
+    const nextInt = intersection(country, next);
+    const bothInt = prevInt.concat(nextInt);
+    const counts = country.map(c => ({
+      c,
+      count: bothInt.filter(b => b === c).length
     }));
+    counts.sort((a, b) => d3.descending(a.count, b.count));
+
+    if (counts[0].count !== counts[1].count) {
+      country = counts.map(d => d.c);
+    } else {
+      // 2. if it prev won a tie break, downgrade
+      const recentCounts = country.map(c => ({
+        c,
+        count: recent[c] ? recent[c] : 0
+      }));
+
+      recentCounts.sort((a, b) => d3.ascending(a.count, b.count));
+      country = recentCounts.map(d => d.c);
+    }
+    if (!recent[country[0]]) recent[country[0]] = 1;
+    else recent[country[0]] += 1;
+  }
+
+  return {
+    ...m,
+    country: country.join(':')
+  };
 });
 
-const resultCountry = [].concat(...byCountry);
-// byCountry.sort((a, b) => d3.ascending(a.count, b.count));
+fs.writeFileSync(`./output/result--month.csv`, d3.csvFormat(outputMonth));
 
-fs.writeFileSync(`./output/result--country.csv`, d3.csvFormat(resultCountry));
+// // BY YEAR
+// const byYear = d3
+//   .nest()
+//   .key(d => d.year)
+//   .rollup(findWinner)
+//   .entries(withCountry);
 
-console.log(z);
+// const flatYear = [].concat(...byYear.map(d => d.value.articles));
+// fs.writeFileSync(`./output/analysis--year.csv`, d3.csvFormat(flatYear));
+
+// const resultYear = byYear.map(d => ({
+//   year: d.value.articles[0].year,
+//   country: d.value.name,
+//   count: d.value.count
+// }));
+
+// resultYear.sort((a, b) => d3.ascending(+a.year, +b.year));
+
+// fs.writeFileSync(`./output/result--year.csv`, d3.csvFormat(resultYear));
+
+// // BY COUNTRY
+// // grab all unique countries
+// const countryDict = {};
+// withCountry.forEach(d => {
+//   d.countries.forEach(c => (countryDict[c] = true));
+// });
+
+// // loop thru each country, tally total
+// const byCountry = Object.keys(countryDict).map(d => {
+//   return d3
+//     .nest()
+//     .key(v => v.year)
+//     .rollup(v => ({
+//       country: d,
+//       count: v.length,
+//       year: v[0].year
+//     }))
+//     .entries(withCountry.filter(v => v.countries.includes(d)))
+//     .map(d => ({
+//       ...d.value,
+//       baseline: baseline.find(b => b.key === d.value.year).value
+//     }));
+// });
+
+// const resultCountry = [].concat(...byCountry);
+// // byCountry.sort((a, b) => d3.ascending(a.count, b.count));
+
+// fs.writeFileSync(`./output/result--country.csv`, d3.csvFormat(resultCountry));
+
+// console.log(z);

@@ -13,7 +13,7 @@ year,month,country,count
 1900,12,united kingdom,78
 1901,01,united kingdom,47
 1901,02,united kingdom,27
-1901,03,russia,39
+1901,03,russia:united kingdom,39
 1901,04,russia,35
 1901,05,united kingdom,27
 1901,06,united kingdom,26
@@ -37,7 +37,7 @@ year,month,country,count
 1902,12,united kingdom,39
 1903,01,united kingdom,23
 1903,02,united kingdom,25
-1903,03,united kingdom,17
+1903,03,united kingdom:cuba,17
 1903,04,united kingdom,32
 1903,05,united kingdom,18
 1903,06,united kingdom,15
@@ -82,10 +82,10 @@ year,month,country,count
 1906,09,cuba,27
 1906,10,united kingdom,33
 1906,11,united kingdom,24
-1906,12,united kingdom,26
+1906,12,united kingdom:japan,26
 1907,01,united kingdom,23
 1907,02,japan,24
-1907,03,france,11
+1907,03,france:italy,11
 1907,04,united kingdom,14
 1907,05,united kingdom,18
 1907,06,france,27
@@ -93,7 +93,7 @@ year,month,country,count
 1907,08,france,15
 1907,09,united kingdom,16
 1907,10,united kingdom,19
-1907,11,france,24
+1907,11,france:united kingdom,24
 1907,12,france,23
 1908,01,france,28
 1908,02,france,30
@@ -114,15 +114,15 @@ year,month,country,count
 1909,05,united kingdom,29
 1909,06,france,37
 1909,07,united kingdom,32
-1909,08,france,25
+1909,08,united kingdom:france,25
 1909,09,united kingdom,17
 1909,10,united kingdom,22
 1909,11,united kingdom,17
 1909,12,denmark,21
-1910,01,france,20
+1910,01,france:germany,20
 1910,02,france,18
 1910,03,united kingdom,12
-1910,04,france,18
+1910,04,united kingdom:france,18
 1910,05,united kingdom,21
 1910,06,canada,14
 1910,07,united kingdom,15
@@ -156,7 +156,7 @@ year,month,country,count
 1912,11,turkey,26
 1912,12,united kingdom,26
 1913,01,united kingdom,19
-1913,02,mexico,18
+1913,02,united kingdom:mexico,18
 1913,03,united kingdom,12
 1913,04,united kingdom,18
 1913,05,united kingdom,21
@@ -164,7 +164,7 @@ year,month,country,count
 1913,07,mexico,25
 1913,08,mexico,31
 1913,09,united kingdom,22
-1913,10,mexico,21
+1913,10,mexico:united kingdom,21
 1913,11,mexico,32
 1913,12,united kingdom,37
 1914,01,mexico,17
@@ -233,7 +233,7 @@ year,month,country,count
 1919,04,germany,86
 1919,05,germany,98
 1919,06,germany,110
-1919,07,united kingdom,45
+1919,07,france:united kingdom,45
 1919,08,germany,30
 1919,09,united kingdom,24
 1919,10,united kingdom,36
@@ -322,8 +322,8 @@ year,month,country,count
 1926,09,france,24
 1926,10,france,27
 1926,11,united kingdom,25
-1926,12,france,19
-1927,01,mexico,38
+1926,12,united kingdom:france,19
+1927,01,united kingdom:mexico,38
 1927,02,united kingdom,46
 1927,03,china,48
 1927,04,china,37
@@ -339,10 +339,10 @@ year,month,country,count
 1928,02,cuba,20
 1928,03,united kingdom,21
 1928,04,germany,51
-1928,05,united kingdom,21
+1928,05,japan:united kingdom,21
 1928,06,france,22
 1928,07,france,31
-1928,08,united kingdom,35
+1928,08,france:united kingdom,35
 1928,09,united kingdom,34
 1928,10,united kingdom,28
 1928,11,united kingdom,33
@@ -395,8 +395,8 @@ year,month,country,count
 1932,10,united kingdom,37
 1932,11,united kingdom,44
 1932,12,united kingdom,43
-1933,01,united kingdom,36
-1933,02,japan,37
+1933,01,united kingdom:japan,36
+1933,02,united kingdom:japan,37
 1933,03,united kingdom,36
 1933,04,united kingdom,34
 1933,05,united kingdom,55
@@ -409,7 +409,7 @@ year,month,country,count
 1933,12,united kingdom,25
 1934,01,united kingdom,17
 1934,02,france,31
-1934,03,france,28
+1934,03,france:united kingdom,28
 1934,04,united kingdom,19
 1934,05,france,22
 1934,06,united kingdom,31
@@ -451,7 +451,7 @@ year,month,country,count
 1937,06,spain,35
 1937,07,japan,33
 1937,08,china,63
-1937,09,united kingdom,40
+1937,09,china:united kingdom,40
 1937,10,united kingdom,42
 1937,11,united kingdom,29
 1937,12,japan,53
@@ -515,7 +515,7 @@ year,month,country,count
 1942,10,japan,32
 1942,11,united kingdom,32
 1942,12,japan,35
-1943,01,germany,35
+1943,01,russia:germany,35
 1943,02,russia,30
 1943,03,germany,57
 1943,04,united kingdom,38
@@ -524,7 +524,7 @@ year,month,country,count
 1943,07,italy,55
 1943,08,germany,46
 1943,09,italy,59
-1943,10,russia,38
+1943,10,italy:russia,38
 1943,11,germany,41
 1943,12,germany,40
 1944,01,germany,42
@@ -591,14 +591,14 @@ year,month,country,count
 1949,02,russia,25
 1949,03,russia,51
 1949,04,russia,52
-1949,05,russia,53
+1949,05,russia:germany,53
 1949,06,russia,49
 1949,07,russia,35
 1949,08,united kingdom,26
 1949,09,russia,38
 1949,10,russia,47
 1949,11,russia,36
-1949,12,russia,25
+1949,12,russia:united kingdom,25
 1950,01,russia,28
 1950,02,russia,32
 1950,03,russia,32
@@ -657,7 +657,7 @@ year,month,country,count
 1954,08,france,40
 1954,09,germany,44
 1954,10,france,34
-1954,11,russia,35
+1954,11,france:russia,35
 1954,12,france,41
 1955,01,china,31
 1955,02,russia,23
@@ -745,7 +745,7 @@ year,month,country,count
 1961,12,russia,37
 1962,01,russia,45
 1962,02,russia,50
-1962,03,algeria,41
+1962,03,russia:algeria,41
 1962,04,russia,44
 1962,05,russia,27
 1962,06,france,31
@@ -826,7 +826,7 @@ year,month,country,count
 1969,09,vietnam,29
 1969,10,vietnam,22
 1969,11,vietnam,39
-1969,12,israel,18
+1969,12,israel:vietnam,18
 1970,01,israel,31
 1970,02,israel,26
 1970,03,cambodia,25
@@ -839,7 +839,7 @@ year,month,country,count
 1970,10,russia,27
 1970,11,russia,19
 1970,12,russia,24
-1971,01,russia,20
+1971,01,russia:vietnam,20
 1971,02,laos,34
 1971,03,vietnam,34
 1971,04,vietnam,22
@@ -881,7 +881,7 @@ year,month,country,count
 1974,04,israel,18
 1974,05,israel,23
 1974,06,russia,23
-1974,07,greece,22
+1974,07,cyprus:greece,22
 1974,08,cyprus,22
 1974,09,france,9
 1974,10,russia,17
@@ -893,7 +893,7 @@ year,month,country,count
 1975,04,vietnam,75
 1975,05,vietnam,24
 1975,06,israel,13
-1975,07,russia,17
+1975,07,israel:russia,17
 1975,08,portugal,24
 1975,09,israel,10
 1975,10,russia,13
@@ -905,11 +905,11 @@ year,month,country,count
 1976,04,lebanon,17
 1976,05,russia,12
 1976,06,lebanon,29
-1976,07,lebanon,13
+1976,07,lebanon:uganda:israel,13
 1976,08,south africa,22
 1976,09,zimbabwe,14
-1976,10,lebanon,9
-1976,11,israel,11
+1976,10,lebanon:china,9
+1976,11,lebanon:israel,11
 1976,12,china,10
 1977,01,russia,12
 1977,02,russia,14
@@ -928,18 +928,18 @@ year,month,country,count
 1978,03,israel,9
 1978,04,russia,11
 1978,05,russia,10
-1978,06,cuba,4
+1978,06,russia:cuba,4
 1978,07,united kingdom,8
-1978,08,switzerland,1
+1978,08,switzerland:south africa:pakistan:iraq:palestine:jersey:japan:russia:united kingdom,1
 1978,11,russia,7
 1978,12,iran,12
 1979,01,china,8
 1979,02,iran,8
 1979,03,china,6
-1979,04,russia,3
-1979,05,egypt,4
-1979,06,russia,5
-1979,07,vietnam,4
+1979,04,south africa:russia,3
+1979,05,egypt:china:israel:united kingdom,4
+1979,06,nicaragua:russia,5
+1979,07,vietnam:china,4
 1979,08,israel,6
 1979,09,cuba,9
 1979,10,south korea,6
@@ -960,7 +960,7 @@ year,month,country,count
 1981,01,iran,20
 1981,02,poland,11
 1981,03,poland,13
-1981,04,poland,14
+1981,04,poland:russia,14
 1981,05,syria,15
 1981,06,israel,14
 1981,07,israel,12
@@ -970,7 +970,7 @@ year,month,country,count
 1981,11,russia,19
 1981,12,poland,21
 1982,01,poland,23
-1982,02,poland,10
+1982,02,brazil:poland,10
 1982,03,brazil,12
 1982,04,united kingdom,20
 1982,05,united kingdom,26
@@ -978,12 +978,12 @@ year,month,country,count
 1982,07,israel,18
 1982,08,lebanon,18
 1982,09,israel,34
-1982,10,russia,12
+1982,10,israel:russia,12
 1982,11,russia,14
 1982,12,russia,11
 1983,01,russia,10
 1983,02,israel,13
-1983,03,israel,10
+1983,03,israel:russia,10
 1983,04,russia,13
 1983,05,russia,15
 1983,06,russia,14
@@ -1011,9 +1011,9 @@ year,month,country,count
 1985,04,japan,13
 1985,05,russia,10
 1985,06,lebanon,26
-1985,07,lebanon,10
+1985,07,lebanon:russia,10
 1985,08,south africa,19
-1985,09,russia,14
+1985,09,south africa:russia,14
 1985,10,russia,14
 1985,11,russia,27
 1985,12,russia,13
@@ -1023,7 +1023,7 @@ year,month,country,count
 1986,04,libya,17
 1986,05,russia,17
 1986,06,south africa,17
-1986,07,south africa,11
+1986,07,south africa:russia,11
 1986,08,russia,22
 1986,09,russia,26
 1986,10,russia,33
@@ -1037,7 +1037,7 @@ year,month,country,count
 1987,06,south korea,13
 1987,07,russia,17
 1987,08,iran,20
-1987,09,iran,14
+1987,09,iran:russia,14
 1987,10,russia,20
 1987,11,russia,18
 1987,12,russia,15
@@ -1105,7 +1105,7 @@ year,month,country,count
 1993,02,japan,10
 1993,03,russia,13
 1993,04,russia,15
-1993,05,russia,7
+1993,05,serbia:china:russia,7
 1993,06,china,10
 1993,07,japan,17
 1993,08,israel,14
@@ -1133,12 +1133,12 @@ year,month,country,count
 1995,06,japan,20
 1995,07,china,8
 1995,08,china,11
-1995,09,china,6
+1995,09,china:japan,6
 1995,10,japan,12
 1995,11,israel,12
 1995,12,russia,11
-1996,01,japan,7
-1996,02,cuba,5
+1996,01,russia:japan,7
+1996,02,cuba:china,5
 1996,03,israel,11
 1996,04,israel,13
 1996,05,russia,8
@@ -1148,16 +1148,16 @@ year,month,country,count
 1996,09,iraq,18
 1996,10,japan,7
 1996,11,russia,8
-1996,12,peru,7
-1997,01,israel,7
+1996,12,peru:serbia,7
+1997,01,israel:russia,7
 1997,02,china,11
 1997,03,china,13
-1997,04,united kingdom,5
+1997,04,china:united kingdom:peru,5
 1997,05,dr congo,15
 1997,06,hong kong,7
 1997,07,mexico,12
 1997,08,israel,9
-1997,09,united kingdom,6
+1997,09,israel:united kingdom,6
 1997,10,india,11
 1997,11,iraq,18
 1997,12,japan,10
@@ -1175,7 +1175,7 @@ year,month,country,count
 1998,12,iraq,8
 1999,01,brazil,11
 1999,02,kosovo,12
-1999,03,kosovo,12
+1999,03,kosovo:china,12
 1999,04,kosovo,16
 1999,05,kosovo,21
 1999,06,kosovo,28
@@ -1187,7 +1187,7 @@ year,month,country,count
 1999,12,russia,15
 2000,01,russia,10
 2000,02,russia,10
-2000,03,united kingdom,7
+2000,03,china:united kingdom,7
 2000,04,cuba,17
 2000,05,china,16
 2000,06,france,7
@@ -1196,14 +1196,14 @@ year,month,country,count
 2000,09,china,10
 2000,10,china,12
 2000,11,united kingdom,12
-2000,12,russia,13
+2000,12,china:russia,13
 2001,01,united kingdom,10
 2001,02,united kingdom,12
 2001,03,china,16
 2001,04,china,20
 2001,05,united kingdom,31
 2001,06,united kingdom,35
-2001,07,united kingdom,16
+2001,07,united kingdom:china,16
 2001,08,united kingdom,19
 2001,09,united kingdom,22
 2001,10,united kingdom,28
@@ -1227,7 +1227,7 @@ year,month,country,count
 2003,04,iraq,82
 2003,05,iraq,29
 2003,06,united kingdom,26
-2003,07,united kingdom,28
+2003,07,iraq:united kingdom,28
 2003,08,iraq,27
 2003,09,iraq,35
 2003,10,iraq,32
@@ -1281,17 +1281,17 @@ year,month,country,count
 2007,10,iraq,16
 2007,11,iraq,11
 2007,12,china,10
-2008,01,iraq,7
-2008,02,china,8
+2008,01,iraq:france,7
+2008,02,iraq:china,8
 2008,03,iraq,15
-2008,04,iraq,11
+2008,04,iraq:china,11
 2008,05,china,17
-2008,06,china,10
+2008,06,china:iraq,10
 2008,07,china,16
 2008,08,china,26
-2008,09,iraq,4
-2008,10,iraq,6
-2008,11,united kingdom,7
+2008,09,china:iraq,4
+2008,10,iraq:china,6
+2008,11,india:united kingdom,7
 2008,12,india,9
 2009,01,palestine,16
 2009,02,iraq,9
@@ -1320,12 +1320,12 @@ year,month,country,count
 2011,01,china,11
 2011,02,egypt,26
 2011,03,japan,36
-2011,04,japan,11
+2011,04,japan:libya,11
 2011,05,china,12
 2011,06,greece,13
 2011,07,united kingdom,10
 2011,08,libya,7
-2011,09,greece,10
+2011,09,china:greece,10
 2011,10,china,9
 2011,11,egypt,13
 2011,12,china,9
@@ -1335,9 +1335,9 @@ year,month,country,count
 2012,04,china,18
 2012,05,china,19
 2012,06,spain,11
-2012,07,syria,11
+2012,07,syria:china,11
 2012,08,syria,13
-2012,09,united kingdom,7
+2012,09,libya:united kingdom,7
 2012,10,china,10
 2012,11,palestine,9
 2012,12,syria,8
@@ -1345,18 +1345,18 @@ year,month,country,count
 2013,02,china,6
 2013,03,syria,11
 2013,04,china,9
-2013,05,syria,10
+2013,05,china:syria,10
 2013,06,china,17
 2013,07,china,13
-2013,08,syria,13
+2013,08,syria:egypt,13
 2013,09,syria,21
-2013,10,syria,4
+2013,10,syria:libya:russia:china,4
 2013,11,iran,12
 2013,12,china,9
-2014,01,iran,6
+2014,01,iran:syria,6
 2014,02,ukraine,10
 2014,03,russia,18
-2014,04,china,9
+2014,04,china:ukraine,9
 2014,05,china,11
 2014,06,iraq,24
 2014,07,israel,12
@@ -1377,7 +1377,7 @@ year,month,country,count
 2015,10,syria,17
 2015,11,france,30
 2015,12,china,13
-2016,01,iran,10
+2016,01,china:iran,10
 2016,02,china,9
 2016,03,china,11
 2016,04,china,11
@@ -1394,7 +1394,7 @@ year,month,country,count
 2017,03,russia,13
 2017,04,russia,16
 2017,05,russia,14
-2017,06,china,12
+2017,06,china:united kingdom,12
 2017,07,china,17
 2017,08,china,18
 2017,09,north korea,14
