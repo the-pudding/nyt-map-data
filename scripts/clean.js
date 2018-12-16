@@ -15,8 +15,11 @@ function clean({ data, year, month }) {
     if (notArticle) return false;
 
     const noTitle = d.headline.includes(' -- No Title');
-    if (noTitle) return false;
-
+		if (noTitle) return false;
+		
+		const isDupe = d.headline.includes('(2)')
+		if (isDupe) return false;
+		
     return true;
   });
 
