@@ -1,29 +1,29 @@
 year,month,country,count
 1900,01,united kingdom,61
-1900,02,united kingdom,49
-1900,03,united kingdom,31
+1900,02,united kingdom,44
+1900,03,united kingdom,27
 1900,04,united kingdom,24
-1900,05,united kingdom,30
+1900,05,united kingdom,29
 1900,06,china,42
-1900,07,china,68
-1900,08,china,47
+1900,07,china,54
+1900,08,china,42
 1900,09,germany,13
 1900,10,united kingdom,22
-1900,11,united kingdom,31
-1900,12,united kingdom,78
-1901,01,united kingdom,47
+1900,11,united kingdom,25
+1900,12,united kingdom,64
+1901,01,united kingdom,46
 1901,02,united kingdom,27
 1901,03,russia:united kingdom,39
 1901,04,russia,35
 1901,05,united kingdom,27
 1901,06,united kingdom,26
-1901,07,united kingdom,38
-1901,08,united kingdom,32
-1901,09,united kingdom,39
+1901,07,united kingdom,36
+1901,08,united kingdom,31
+1901,09,united kingdom,37
 1901,10,united kingdom,65
 1901,11,united kingdom,61
 1901,12,united kingdom,68
-1902,01,united kingdom,57
+1902,01,united kingdom,56
 1902,02,united kingdom,40
 1902,03,united kingdom,36
 1902,04,united kingdom,39
@@ -37,10 +37,10 @@ year,month,country,count
 1902,12,united kingdom,39
 1903,01,united kingdom,23
 1903,02,united kingdom,25
-1903,03,united kingdom:cuba,17
+1903,03,united kingdom,17
 1903,04,united kingdom,32
 1903,05,united kingdom,18
-1903,06,united kingdom,15
+1903,06,united kingdom,14
 1903,07,united kingdom,22
 1903,08,turkey,21
 1903,09,united kingdom,20
@@ -186,10 +186,10 @@ year,month,country,count
 1915,05,germany,160
 1915,06,germany,163
 1915,07,germany,143
-1915,08,germany,177
+1915,08,germany,175
 1915,09,germany,149
-1915,10,germany,128
-1915,11,germany,125
+1915,10,germany,126
+1915,11,germany,124
 1915,12,germany,111
 1916,01,germany,101
 1916,02,germany,135
@@ -857,7 +857,7 @@ year,month,country,count
 1972,04,vietnam,43
 1972,05,vietnam,52
 1972,06,vietnam,36
-1972,07,vietnam,29
+1972,07,vietnam,27
 1972,08,vietnam,26
 1972,09,russia,22
 1972,10,vietnam,51
@@ -1412,4 +1412,4 @@ year,month,country,count
 2018,09,china,16
 2018,10,china,15
 2018,11,india,1
-2018,12,china,12
+2018,12,china,13
