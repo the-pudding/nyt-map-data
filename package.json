@@ -10,6 +10,7 @@
     "countries": "node scripts/countries.js",
     "add-countries": "node scripts/add-countries.js",
     "analyze": "node scripts/analyze.js",
+    "headlines": "node scripts/headlines.js",
     "common-words": "node scripts/common-words.js"
   },
   "keywords": [],
