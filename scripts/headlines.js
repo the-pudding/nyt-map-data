@@ -9,10 +9,14 @@ function makeRequest() {
     const url = `${base}/${id}/export?format=csv&id=${id}&gid=0`;
     request(url, (error, response, body) => {
       const data = d3.csvParse(body);
-      resolve(data.map(d => d.web_url));
+      resolve(data.map(d => d.web_url.trim()));
     });
   });
 }
+
+const headlinesPrev = d3.csvParse(
+  fs.readFileSync('./output/headlines.csv', 'utf-8')
+);
 
 const analysis = d3.csvParse(
   fs.readFileSync('./output/analysis--month.csv', 'utf-8')
@@ -26,7 +30,6 @@ const result = d3
   }));
 
 function process(blacklist) {
-  console.log(blacklist);
   const nested = d3
     .nest()
     .key(d => `${d.year}-${d.month}`)
@@ -56,7 +59,27 @@ function process(blacklist) {
       count: d.count
     }));
 
-  const output = d3.csvFormat(nested);
+  const pluck = d => {
+    return nested.find(n => n.year === d.year && n.month === d.month);
+  };
+
+  const newHeadlines = headlinesPrev.map(d => {
+    // if on blacklist, pluck new nested
+    return blacklist.includes(d.web_url) ? pluck(d) : d;
+  });
+
+  const nestYear = d3
+    .nest()
+    .key(d => d.year)
+    .rollup(values => {
+      values.sort((a, b) => d3.descending(+a.count, +b.count));
+      return values.slice(0, 3);
+    })
+    .entries(newHeadlines);
+
+  const web = [].concat(...nestYear.map(d => d.value));
+
+  const output = d3.csvFormat(web);
 
   fs.writeFileSync('./output/headlines.csv', output);
 }

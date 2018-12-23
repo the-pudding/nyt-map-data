@@ -60,7 +60,8 @@ const customCommon = {
 };
 
 const customExclude = {
-  Jersey: ['new jersey']
+  Jersey: ['new jersey'],
+  'United Kingdom': ['new england']
 };
 
 const customAdd = [

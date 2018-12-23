@@ -1,8 +1,8 @@
 year,month,country,count
 1900,01,united kingdom,61
-1900,02,united kingdom,44
-1900,03,united kingdom,27
-1900,04,united kingdom,24
+1900,02,united kingdom:south africa,43
+1900,03,united kingdom,26
+1900,04,united kingdom,23
 1900,05,united kingdom,29
 1900,06,china,42
 1900,07,china,54
@@ -10,40 +10,40 @@ year,month,country,count
 1900,09,germany,13
 1900,10,united kingdom,22
 1900,11,united kingdom,25
-1900,12,united kingdom,64
+1900,12,united kingdom,61
 1901,01,united kingdom,46
-1901,02,united kingdom,27
-1901,03,russia:united kingdom,39
+1901,02,united kingdom,26
+1901,03,russia,39
 1901,04,russia,35
-1901,05,united kingdom,27
+1901,05,united kingdom,26
 1901,06,united kingdom,26
-1901,07,united kingdom,36
+1901,07,united kingdom,35
 1901,08,united kingdom,31
 1901,09,united kingdom,37
 1901,10,united kingdom,65
-1901,11,united kingdom,61
-1901,12,united kingdom,68
+1901,11,united kingdom,59
+1901,12,united kingdom,66
 1902,01,united kingdom,56
-1902,02,united kingdom,40
-1902,03,united kingdom,36
-1902,04,united kingdom,39
+1902,02,united kingdom,39
+1902,03,united kingdom,34
+1902,04,united kingdom,38
 1902,05,france,26
 1902,06,united kingdom,29
-1902,07,united kingdom,19
-1902,08,united kingdom,26
-1902,09,united kingdom,15
-1902,10,united kingdom,17
-1902,11,united kingdom,18
-1902,12,united kingdom,39
+1902,07,united kingdom,17
+1902,08,united kingdom,18
+1902,09,united kingdom,14
+1902,10,united kingdom,15
+1902,11,united kingdom,17
+1902,12,united kingdom:venezuela,38
 1903,01,united kingdom,23
-1903,02,united kingdom,25
+1903,02,united kingdom:germany,24
 1903,03,united kingdom,17
-1903,04,united kingdom,32
-1903,05,united kingdom,18
-1903,06,united kingdom,14
-1903,07,united kingdom,22
+1903,04,united kingdom,31
+1903,05,united kingdom,17
+1903,06,united kingdom,12
+1903,07,united kingdom,21
 1903,08,turkey,21
-1903,09,united kingdom,20
+1903,09,united kingdom,19
 1903,10,russia,23
 1903,11,colombia,43
 1903,12,panama,32
@@ -81,23 +81,23 @@ year,month,country,count
 1906,08,united kingdom,26
 1906,09,cuba,27
 1906,10,united kingdom,33
-1906,11,united kingdom,24
-1906,12,united kingdom:japan,26
+1906,11,united kingdom,23
+1906,12,japan,26
 1907,01,united kingdom,23
 1907,02,japan,24
 1907,03,france:italy,11
-1907,04,united kingdom,14
-1907,05,united kingdom,18
+1907,04,france:united kingdom,13
+1907,05,united kingdom,16
 1907,06,france,27
 1907,07,japan,27
 1907,08,france,15
-1907,09,united kingdom,16
-1907,10,united kingdom,19
-1907,11,france:united kingdom,24
+1907,09,france:united kingdom,15
+1907,10,united kingdom,18
+1907,11,france,24
 1907,12,france,23
 1908,01,france,28
 1908,02,france,30
-1908,03,united kingdom,28
+1908,03,united kingdom,27
 1908,04,united kingdom,20
 1908,05,france,21
 1908,06,france,16
@@ -105,45 +105,45 @@ year,month,country,count
 1908,08,united kingdom,22
 1908,09,united kingdom,19
 1908,10,united kingdom,23
-1908,11,united kingdom,19
+1908,11,united kingdom,18
 1908,12,france,17
 1909,01,united kingdom,25
 1909,02,united kingdom,23
 1909,03,united kingdom,27
 1909,04,france,22
-1909,05,united kingdom,29
+1909,05,united kingdom,28
 1909,06,france,37
 1909,07,united kingdom,32
 1909,08,united kingdom:france,25
 1909,09,united kingdom,17
 1909,10,united kingdom,22
-1909,11,united kingdom,17
+1909,11,united kingdom,15
 1909,12,denmark,21
 1910,01,france:germany,20
 1910,02,france,18
-1910,03,united kingdom,12
-1910,04,united kingdom:france,18
-1910,05,united kingdom,21
+1910,03,france:united kingdom,11
+1910,04,france,18
+1910,05,united kingdom,19
 1910,06,canada,14
-1910,07,united kingdom,15
+1910,07,united kingdom,13
 1910,08,united kingdom,14
 1910,09,france,18
 1910,10,france,16
 1910,11,mexico,20
-1910,12,united kingdom,17
-1911,01,united kingdom,21
-1911,02,united kingdom,13
+1910,12,united kingdom,16
+1911,01,united kingdom,19
+1911,02,united kingdom,12
 1911,03,mexico,26
-1911,04,united kingdom,21
+1911,04,mexico,20
 1911,05,united kingdom,17
 1911,06,united kingdom,15
 1911,07,united kingdom,26
 1911,08,united kingdom,28
 1911,09,france,27
 1911,10,italy,21
-1911,11,united kingdom,15
+1911,11,italy:united kingdom,14
 1911,12,russia,24
-1912,01,united kingdom,26
+1912,01,united kingdom,25
 1912,02,united kingdom,13
 1912,03,united kingdom,25
 1912,04,france,14
@@ -154,19 +154,19 @@ year,month,country,count
 1912,09,united kingdom,18
 1912,10,turkey,26
 1912,11,turkey,26
-1912,12,united kingdom,26
+1912,12,united kingdom,25
 1913,01,united kingdom,19
 1913,02,united kingdom:mexico,18
-1913,03,united kingdom,12
+1913,03,united kingdom:cuba,11
 1913,04,united kingdom,18
 1913,05,united kingdom,21
 1913,06,united kingdom,14
 1913,07,mexico,25
 1913,08,mexico,31
 1913,09,united kingdom,22
-1913,10,mexico:united kingdom,21
+1913,10,mexico,21
 1913,11,mexico,32
-1913,12,united kingdom,37
+1913,12,united kingdom,35
 1914,01,mexico,17
 1914,02,united kingdom,24
 1914,03,united kingdom,23
@@ -233,14 +233,14 @@ year,month,country,count
 1919,04,germany,86
 1919,05,germany,98
 1919,06,germany,110
-1919,07,france:united kingdom,45
+1919,07,france,45
 1919,08,germany,30
 1919,09,united kingdom,24
 1919,10,united kingdom,36
 1919,11,germany,27
 1919,12,germany,37
 1920,01,germany,37
-1920,02,united kingdom,57
+1920,02,united kingdom,55
 1920,03,germany,58
 1920,04,germany,36
 1920,05,france,22
@@ -248,8 +248,8 @@ year,month,country,count
 1920,07,germany,27
 1920,08,poland,78
 1920,09,italy,23
-1920,10,united kingdom,36
-1920,11,united kingdom,39
+1920,10,united kingdom,35
+1920,11,united kingdom,37
 1920,12,united kingdom,32
 1921,01,germany,29
 1921,02,united kingdom,36
@@ -257,18 +257,18 @@ year,month,country,count
 1921,04,germany,58
 1921,05,germany,58
 1921,06,united kingdom,43
-1921,07,united kingdom,53
+1921,07,united kingdom,52
 1921,08,russia,32
 1921,09,united kingdom,30
-1921,10,united kingdom,42
-1921,11,united kingdom,63
+1921,10,united kingdom,39
+1921,11,united kingdom,62
 1921,12,united kingdom,60
 1922,01,france,38
 1922,02,united kingdom,36
 1922,03,united kingdom,34
 1922,04,russia,42
 1922,05,russia,54
-1922,06,united kingdom,37
+1922,06,united kingdom,36
 1922,07,germany,31
 1922,08,united kingdom,29
 1922,09,united kingdom,54
@@ -282,35 +282,35 @@ year,month,country,count
 1923,05,france,35
 1923,06,united kingdom,41
 1923,07,france,37
-1923,08,united kingdom,32
+1923,08,germany:united kingdom,30
 1923,09,italy,33
 1923,10,germany,52
 1923,11,united kingdom,47
 1923,12,germany,33
 1924,01,united kingdom,30
 1924,02,united kingdom,14
-1924,03,united kingdom,27
+1924,03,united kingdom:france,26
 1924,04,germany,34
 1924,05,france,22
 1924,06,france,16
 1924,07,united kingdom,31
 1924,08,united kingdom,38
-1924,09,united kingdom,22
-1924,10,united kingdom,26
+1924,09,united kingdom:france,21
+1924,10,united kingdom,25
 1924,11,united kingdom,34
 1924,12,france,37
 1925,01,france,41
 1925,02,france,30
-1925,03,united kingdom,24
+1925,03,france:united kingdom,23
 1925,04,united kingdom,26
 1925,05,france,43
-1925,06,united kingdom,29
+1925,06,united kingdom,28
 1925,07,united kingdom,35
 1925,08,france,44
 1925,09,france,48
 1925,10,france,42
-1925,11,united kingdom,27
-1925,12,united kingdom,27
+1925,11,united kingdom,25
+1925,12,united kingdom,26
 1926,01,united kingdom,29
 1926,02,france,20
 1926,03,france,29
@@ -321,10 +321,10 @@ year,month,country,count
 1926,08,mexico,36
 1926,09,france,24
 1926,10,france,27
-1926,11,united kingdom,25
-1926,12,united kingdom:france,19
-1927,01,united kingdom:mexico,38
-1927,02,united kingdom,46
+1926,11,united kingdom,24
+1926,12,france,19
+1927,01,mexico,38
+1927,02,united kingdom,44
 1927,03,china,48
 1927,04,china,37
 1927,05,france,44
@@ -333,54 +333,54 @@ year,month,country,count
 1927,08,united kingdom,33
 1927,09,france,43
 1927,10,france,34
-1927,11,united kingdom,28
+1927,11,united kingdom,20
 1927,12,mexico,39
 1928,01,nicaragua,33
 1928,02,cuba,20
-1928,03,united kingdom,21
+1928,03,france:united kingdom,20
 1928,04,germany,51
 1928,05,japan:united kingdom,21
 1928,06,france,22
 1928,07,france,31
-1928,08,france:united kingdom,35
-1928,09,united kingdom,34
-1928,10,united kingdom,28
-1928,11,united kingdom,33
+1928,08,france,35
+1928,09,united kingdom,32
+1928,10,united kingdom,25
+1928,11,united kingdom,32
 1928,12,united kingdom,40
-1929,01,united kingdom,26
+1929,01,united kingdom,25
 1929,02,united kingdom,31
 1929,03,mexico,38
 1929,04,france,38
 1929,05,france,38
 1929,06,united kingdom,41
-1929,07,united kingdom,51
+1929,07,united kingdom,50
 1929,08,united kingdom,61
-1929,09,united kingdom,67
-1929,10,united kingdom,40
-1929,11,united kingdom,28
-1929,12,united kingdom,35
-1930,01,united kingdom,52
+1929,09,united kingdom,64
+1929,10,united kingdom,39
+1929,11,united kingdom,26
+1929,12,united kingdom,34
+1930,01,united kingdom,51
 1930,02,united kingdom,36
 1930,03,france,41
 1930,04,united kingdom,51
-1930,05,united kingdom,45
+1930,05,united kingdom,44
 1930,06,united kingdom,36
 1930,07,united kingdom,27
-1930,08,united kingdom,32
+1930,08,united kingdom,31
 1930,09,united kingdom,33
 1930,10,united kingdom,36
-1930,11,united kingdom,44
+1930,11,united kingdom,43
 1930,12,united kingdom,21
 1931,01,united kingdom,34
 1931,02,united kingdom,30
-1931,03,united kingdom,29
+1931,03,united kingdom,28
 1931,04,united kingdom,34
-1931,05,united kingdom,49
+1931,05,united kingdom,46
 1931,06,germany,60
 1931,07,germany,80
-1931,08,united kingdom,48
-1931,09,united kingdom,52
-1931,10,united kingdom,49
+1931,08,united kingdom,47
+1931,09,united kingdom,51
+1931,10,united kingdom,47
 1931,11,japan,67
 1931,12,united kingdom,33
 1932,01,japan,49
@@ -389,24 +389,24 @@ year,month,country,count
 1932,04,united kingdom,37
 1932,05,japan,23
 1932,06,united kingdom,25
-1932,07,united kingdom,40
-1932,08,united kingdom,34
-1932,09,united kingdom,29
-1932,10,united kingdom,37
-1932,11,united kingdom,44
-1932,12,united kingdom,43
-1933,01,united kingdom:japan,36
-1933,02,united kingdom:japan,37
+1932,07,united kingdom,35
+1932,08,united kingdom,29
+1932,09,united kingdom,27
+1932,10,united kingdom,32
+1932,11,united kingdom,42
+1932,12,united kingdom,42
+1933,01,japan,36
+1933,02,japan:united kingdom,37
 1933,03,united kingdom,36
 1933,04,united kingdom,34
 1933,05,united kingdom,55
-1933,06,united kingdom,60
+1933,06,united kingdom,59
 1933,07,united kingdom,43
 1933,08,cuba,32
 1933,09,cuba,33
 1933,10,germany,39
 1933,11,united kingdom,23
-1933,12,united kingdom,25
+1933,12,united kingdom,24
 1934,01,united kingdom,17
 1934,02,france,31
 1934,03,france:united kingdom,28
@@ -414,11 +414,11 @@ year,month,country,count
 1934,05,france,22
 1934,06,united kingdom,31
 1934,07,germany,33
-1934,08,united kingdom,22
-1934,09,united kingdom,22
-1934,10,united kingdom,33
+1934,08,germany,21
+1934,09,united kingdom,15
+1934,10,united kingdom,32
 1934,11,united kingdom,34
-1934,12,united kingdom,23
+1934,12,united kingdom,21
 1935,01,germany,12
 1935,02,united kingdom,24
 1935,03,united kingdom,32
@@ -430,10 +430,10 @@ year,month,country,count
 1935,09,italy,51
 1935,10,italy,93
 1935,11,italy,58
-1935,12,united kingdom,46
-1936,01,united kingdom,38
-1936,02,united kingdom,26
-1936,03,united kingdom,53
+1935,12,united kingdom,45
+1936,01,united kingdom,37
+1936,02,united kingdom:japan,25
+1936,03,united kingdom,46
 1936,04,italy,35
 1936,05,united kingdom,42
 1936,06,united kingdom,15
@@ -443,25 +443,25 @@ year,month,country,count
 1936,10,spain,48
 1936,11,spain,52
 1936,12,united kingdom,58
-1937,01,united kingdom,26
-1937,02,united kingdom,24
+1937,01,united kingdom,25
+1937,02,united kingdom,23
 1937,03,united kingdom,26
 1937,04,spain,34
-1937,05,united kingdom,36
+1937,05,united kingdom,35
 1937,06,spain,35
 1937,07,japan,33
 1937,08,china,63
 1937,09,china:united kingdom,40
-1937,10,united kingdom,42
+1937,10,united kingdom,41
 1937,11,united kingdom,29
 1937,12,japan,53
 1938,01,japan,20
 1938,02,united kingdom,42
 1938,03,united kingdom,45
-1938,04,united kingdom,32
+1938,04,united kingdom,31
 1938,05,united kingdom,33
 1938,06,united kingdom,29
-1938,07,united kingdom,40
+1938,07,united kingdom,38
 1938,08,japan,30
 1938,09,czechia,72
 1938,10,germany,44
@@ -486,11 +486,11 @@ year,month,country,count
 1940,05,germany,56
 1940,06,france,79
 1940,07,united kingdom,83
-1940,08,united kingdom,110
+1940,08,united kingdom,109
 1940,09,united kingdom,84
 1940,10,united kingdom,81
-1940,11,united kingdom,76
-1940,12,united kingdom,75
+1940,11,united kingdom,75
+1940,12,united kingdom,73
 1941,01,united kingdom,92
 1941,02,united kingdom,97
 1941,03,united kingdom,93
@@ -506,7 +506,7 @@ year,month,country,count
 1942,01,japan,74
 1942,02,japan,78
 1942,03,japan,56
-1942,04,united kingdom,48
+1942,04,united kingdom,47
 1942,05,united kingdom,40
 1942,06,united kingdom,54
 1942,07,russia,42
@@ -531,7 +531,7 @@ year,month,country,count
 1944,02,russia,43
 1944,03,germany,40
 1944,04,russia,30
-1944,05,united kingdom,39
+1944,05,united kingdom,38
 1944,06,germany,42
 1944,07,germany,57
 1944,08,germany,63
@@ -549,7 +549,7 @@ year,month,country,count
 1945,08,japan,96
 1945,09,japan,73
 1945,10,united kingdom,35
-1945,11,united kingdom,36
+1945,11,united kingdom,35
 1945,12,russia,50
 1946,01,russia,31
 1946,02,russia,39
@@ -571,7 +571,7 @@ year,month,country,count
 1947,06,russia,48
 1947,07,russia,41
 1947,08,united kingdom,45
-1947,09,united kingdom,53
+1947,09,united kingdom,52
 1947,10,russia,42
 1947,11,russia,44
 1947,12,russia,44
@@ -594,7 +594,7 @@ year,month,country,count
 1949,05,russia:germany,53
 1949,06,russia,49
 1949,07,russia,35
-1949,08,united kingdom,26
+1949,08,united kingdom,25
 1949,09,russia,38
 1949,10,russia,47
 1949,11,russia,36
@@ -617,14 +617,14 @@ year,month,country,count
 1951,04,united kingdom,32
 1951,05,china,28
 1951,06,russia,31
-1951,07,united kingdom,25
+1951,07,united kingdom,24
 1951,08,russia,40
 1951,09,japan,21
 1951,10,united kingdom,52
 1951,11,russia,26
 1951,12,united kingdom,23
 1952,01,united kingdom,39
-1952,02,united kingdom,31
+1952,02,united kingdom,30
 1952,03,russia,25
 1952,04,russia,24
 1952,05,germany,36
@@ -633,7 +633,7 @@ year,month,country,count
 1952,08,russia,24
 1952,09,russia,27
 1952,10,russia,30
-1952,11,united kingdom,16
+1952,11,united kingdom,15
 1952,12,russia,24
 1953,01,united kingdom,17
 1953,02,russia,23
@@ -673,7 +673,7 @@ year,month,country,count
 1955,12,russia,54
 1956,01,russia,39
 1956,02,russia,54
-1956,03,united kingdom,48
+1956,03,russia,46
 1956,04,russia,71
 1956,05,russia,55
 1956,06,russia,63
@@ -1210,7 +1210,7 @@ year,month,country,count
 2001,11,afghanistan,38
 2001,12,afghanistan,44
 2002,01,japan,26
-2002,02,united kingdom,28
+2002,02,united kingdom,27
 2002,03,israel,24
 2002,04,japan,32
 2002,05,japan,23
