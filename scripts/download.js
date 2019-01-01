@@ -35,9 +35,6 @@ async function init() {
   const start = 1900;
   const months = 12;
 
-  const queries = [{ year: 2018, month: 12 }];
-  await download(queries[0]);
-
   const queries = d3.range((end - start) * months).map(i => ({
     month: (i % months) + 1,
     year: Math.floor(i / months) + start
